@@ -72,7 +72,7 @@ SD_CLK
 Wire Wire Line
 	3350 4250 2950 4250
 Text GLabel 2950 4250 0    50   Output ~ 0
-1V8_FROM_FPGA
+1V8_from_FPGA
 Wire Wire Line
 	2950 3650 3350 3650
 NoConn ~ 4850 2950

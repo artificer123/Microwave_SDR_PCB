@@ -60,8 +60,6 @@ F 3 "" H 5150 4400 50  0001 C CNN
 	1    5150 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 4400 5150 4100
 $Comp
 L power:GND #PWR?
 U 1 1 5D68CA7F
@@ -297,4 +295,6 @@ Text HLabel 3400 4000 0    50   Input ~ 0
 Enable
 Wire Wire Line
 	3400 4000 3700 4000
+Wire Wire Line
+	5150 4100 5150 4400
 $EndSCHEMATC
