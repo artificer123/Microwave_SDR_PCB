@@ -509,7 +509,7 @@ F 2 "Resistor_WUT:R_Shunt_Vishay_WSK1206" V 6680 1200 50  0001 C CNN
 F 3 "~" H 6750 1200 50  0001 C CNN
 F 4 "WSK1206R0100FEA18" H 6750 1200 50  0001 C CNN "MPN"
 	1    6750 1200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6900 1100 7450 1100
@@ -547,7 +547,7 @@ F 2 "Resistor_WUT:R_Shunt_Vishay_WSK1206" V 6680 4400 50  0001 C CNN
 F 3 "~" H 6750 4400 50  0001 C CNN
 F 4 "WSK1206R0100FEA18" H 6750 4400 50  0001 C CNN "MPN"
 	1    6750 4400
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6900 4300 7450 4300
