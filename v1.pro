@@ -1,4 +1,4 @@
-update=15/10/2019 22:03:19
+update=21/10/2019 22:06:24
 version=1
 last_client=kicad
 [general]
@@ -39,8 +39,9 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
-TrackWidth2=1
-TrackWidth3=2
+TrackWidth2=0.1
+TrackWidth3=0.385
+TrackWidth4=2
 ViaDiameter1=0.45
 ViaDrill1=0.2
 ViaDiameter2=0.45
@@ -82,6 +83,17 @@ Name=In2.Cu
 Type=2
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
+Name=50R_Microstrip
+Clearance=0.2
+TrackWidth=0.385
+ViaDiameter=0.45
+ViaDrill=0.2
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=USB
 Clearance=0.2
 TrackWidth=0.25
