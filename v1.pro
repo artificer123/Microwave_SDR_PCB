@@ -1,4 +1,4 @@
-update=21/10/2019 22:06:24
+update=27/10/2019 18:33:12
 version=1
 last_client=kicad
 [general]
@@ -40,8 +40,9 @@ MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.1
-TrackWidth3=0.385
-TrackWidth4=2
+TrackWidth3=0.1651
+TrackWidth4=0.385
+TrackWidth5=2
 ViaDiameter1=0.45
 ViaDrill1=0.2
 ViaDiameter2=0.45
@@ -94,6 +95,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
+Name=Ethernet
+Clearance=0.1
+TrackWidth=0.25
+ViaDiameter=0.45
+ViaDrill=0.2
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.1651
+dPairGap=0.1016
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
 Name=USB
 Clearance=0.2
 TrackWidth=0.25

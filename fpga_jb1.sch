@@ -129,7 +129,7 @@ ETH_MDI0_N
 Text GLabel 5250 2750 2    50   BiDi ~ 0
 ETH_MDI1_P
 Text GLabel 5250 2850 2    50   BiDi ~ 0
-ETH_MDI1_M
+ETH_MDI1_N
 Text GLabel 5250 3050 2    50   BiDi ~ 0
 ETH_MDI2_P
 Text GLabel 5250 3150 2    50   BiDi ~ 0
