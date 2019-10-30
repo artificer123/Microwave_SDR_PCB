@@ -144,7 +144,7 @@ U 1 1 5D9A0068
 P 5300 8550
 F 0 "RN1" H 5488 8596 50  0000 L CNN
 F 1 "33k" H 5488 8505 50  0000 L CNN
-F 2 "Resistor_SMD:R_Cat16-4" V 5575 8550 50  0001 C CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 5575 8550 50  0001 C CNN
 F 3 "~" H 5300 8550 50  0001 C CNN
 	1    5300 8550
 	1    0    0    -1  
@@ -512,4 +512,207 @@ Wire Wire Line
 	1350 6250 3350 6250
 Wire Wire Line
 	1350 6600 1350 6550
+Text GLabel 1300 4950 0    50   Input ~ 0
+ADC_D7
+Text GLabel 1300 4850 0    50   Input ~ 0
+ADC_D8
+Text GLabel 1300 4750 0    50   Input ~ 0
+ADC_D9
+Text GLabel 1300 4650 0    50   Input ~ 0
+ADC_D10
+Text GLabel 1300 4550 0    50   Input ~ 0
+ADC_D11
+Text GLabel 1300 4450 0    50   Input ~ 0
+ADC_D12
+Text GLabel 1300 4350 0    50   Input ~ 0
+ADC_D13
+Text GLabel 1300 4000 0    50   Input ~ 0
+ADC_D14
+Text GLabel 1300 3900 0    50   Input ~ 0
+ADC_D15
+$Comp
+L Device:R_Pack08 RN4
+U 1 1 5DE3008D
+P 1600 5850
+F 0 "RN4" V 983 5850 50  0000 C CNN
+F 1 "100" V 1074 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_8x0602" V 2075 5850 50  0001 C CNN
+F 3 "~" H 1600 5850 50  0001 C CNN
+F 4 "EXB2HV101JV" V 1600 5850 50  0001 C CNN "MPN"
+	1    1600 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack08 RN3
+U 1 1 5DE376A2
+P 1600 4750
+F 0 "RN3" V 983 4750 50  0000 C CNN
+F 1 "100" V 1074 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_8x0602" V 2075 4750 50  0001 C CNN
+F 3 "~" H 1600 4750 50  0001 C CNN
+F 4 "EXB2HV101JV" V 1600 4750 50  0001 C CNN "MPN"
+	1    1600 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 5050 1400 5050
+Wire Wire Line
+	1300 5450 1400 5450
+Wire Wire Line
+	1300 5550 1400 5550
+Wire Wire Line
+	1300 5650 1400 5650
+Wire Wire Line
+	1300 5750 1400 5750
+Wire Wire Line
+	1300 5850 1400 5850
+Wire Wire Line
+	1300 5950 1400 5950
+Wire Wire Line
+	1300 6050 1400 6050
+Wire Wire Line
+	3200 5950 3200 5850
+Wire Wire Line
+	3200 5850 3350 5850
+Wire Wire Line
+	3100 5750 3100 5850
+Wire Wire Line
+	3000 5650 3000 5750
+Wire Wire Line
+	2900 5550 2900 5650
+Wire Wire Line
+	3350 5550 2900 5550
+Wire Wire Line
+	3350 5650 3000 5650
+Wire Wire Line
+	3350 5750 3100 5750
+Wire Wire Line
+	2800 5550 2800 5350
+Wire Wire Line
+	2800 5350 3350 5350
+Wire Wire Line
+	2700 5450 2700 5250
+Wire Wire Line
+	2700 5250 3350 5250
+Text GLabel 1300 5050 0    50   Input ~ 0
+ADC_D6
+Text GLabel 1300 5450 0    50   Input ~ 0
+ADC_D5
+Text GLabel 1300 5550 0    50   Input ~ 0
+ADC_D4
+Text GLabel 1300 5650 0    50   Input ~ 0
+ADC_D3
+Text GLabel 1300 5750 0    50   Input ~ 0
+ADC_D2
+Text GLabel 1300 5850 0    50   Input ~ 0
+ADC_D1
+Text GLabel 1300 5950 0    50   Input ~ 0
+ADC_D0
+Text GLabel 1300 6050 0    50   Input ~ 0
+ADC_Clk
+Wire Wire Line
+	1800 6050 3350 6050
+Wire Wire Line
+	1800 5950 3200 5950
+Wire Wire Line
+	1800 5850 3100 5850
+Wire Wire Line
+	1800 5750 3000 5750
+Wire Wire Line
+	1800 5650 2900 5650
+Wire Wire Line
+	1800 5550 2800 5550
+Wire Wire Line
+	1800 5450 2700 5450
+Wire Wire Line
+	1300 4950 1400 4950
+Wire Wire Line
+	1300 4850 1400 4850
+Wire Wire Line
+	1300 4750 1400 4750
+Wire Wire Line
+	1300 4650 1400 4650
+Wire Wire Line
+	1300 4450 1400 4450
+Wire Wire Line
+	1300 4550 1400 4550
+Wire Wire Line
+	1300 4350 1400 4350
+Wire Wire Line
+	1300 4000 1400 4000
+Wire Wire Line
+	1800 4850 3350 4850
+Wire Wire Line
+	1800 4750 3350 4750
+Wire Wire Line
+	1800 4650 3350 4650
+Wire Wire Line
+	1800 4550 3350 4550
+Wire Wire Line
+	1800 4450 3350 4450
+Wire Wire Line
+	1800 4350 3350 4350
+Wire Wire Line
+	3350 5050 2500 5050
+Wire Wire Line
+	2500 5050 2500 4950
+Wire Wire Line
+	2500 4950 1800 4950
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 5DF876F6
+P 1600 3900
+F 0 "RN2" V 1183 3900 50  0000 C CNN
+F 1 "100" V 1274 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0402" V 1875 3900 50  0001 C CNN
+F 3 "~" H 1600 3900 50  0001 C CNN
+	1    1600 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 3900 1400 3900
+Wire Wire Line
+	1950 4050 1950 3900
+Wire Wire Line
+	1950 3900 1800 3900
+Wire Wire Line
+	1950 4050 3350 4050
+Wire Wire Line
+	2050 3950 2050 3800
+Wire Wire Line
+	2050 3800 1800 3800
+Wire Wire Line
+	2050 3950 3350 3950
+Text GLabel 1300 3800 0    50   Input ~ 0
+ADC_Overflow
+Wire Wire Line
+	1300 3800 1400 3800
+Text GLabel 1300 3700 0    50   Output ~ 0
+ADC_RAND
+Wire Wire Line
+	1300 3700 1400 3700
+Wire Wire Line
+	3350 3850 2150 3850
+Wire Wire Line
+	2150 3850 2150 3700
+Wire Wire Line
+	2150 3700 1800 3700
+Wire Wire Line
+	1800 5050 2400 5050
+Wire Wire Line
+	2400 5050 2400 5150
+Wire Wire Line
+	2400 5150 3350 5150
+Wire Wire Line
+	3350 6150 1800 6150
+Text GLabel 1300 6150 0    50   Output ~ 0
+ADC_DITH
+Wire Wire Line
+	1300 6150 1400 6150
+Wire Wire Line
+	1800 4000 1850 4000
+Wire Wire Line
+	1850 4000 1850 4150
+Wire Wire Line
+	1850 4150 3350 4150
 $EndSCHEMATC

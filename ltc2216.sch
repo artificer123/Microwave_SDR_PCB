@@ -288,17 +288,6 @@ F 3 "" H 6050 4400 50  0001 C CNN
 	1    6050 4400
 	1    0    0    -1  
 $EndComp
-$Comp
-L IC_WUT:LTC2216 U20
-U 1 1 5D65BB7B
-P 8550 3850
-F 0 "U20" H 8950 5600 50  0000 C CNN
-F 1 "LTC2216" H 8950 1700 50  0000 C CNN
-F 2 "IC_WUT:QFN-64-1EP_9x9mm_P0.5mm_EP7.15x7.15mm" H 8550 3850 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/22165f.pdf" H 8550 3850 50  0001 C CNN
-	1    8550 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5550 2300 5750 2300
 Connection ~ 5750 2300
@@ -307,25 +296,25 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0160
 U 1 1 5DC56C1B
-P 8550 6200
-F 0 "#PWR0160" H 8550 5950 50  0001 C CNN
-F 1 "GND" H 8555 6027 50  0000 C CNN
-F 2 "" H 8550 6200 50  0001 C CNN
-F 3 "" H 8550 6200 50  0001 C CNN
-	1    8550 6200
+P 8550 5250
+F 0 "#PWR0160" H 8550 5000 50  0001 C CNN
+F 1 "GND" H 8555 5077 50  0000 C CNN
+F 2 "" H 8550 5250 50  0001 C CNN
+F 3 "" H 8550 5250 50  0001 C CNN
+	1    8550 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8450 6050 8450 6150
+	8450 5100 8450 5200
 Wire Wire Line
-	8450 6150 8550 6150
+	8450 5200 8550 5200
 Wire Wire Line
-	8650 6150 8650 6050
+	8650 5200 8650 5100
 Wire Wire Line
-	8550 6200 8550 6150
-Connection ~ 8550 6150
+	8550 5250 8550 5200
+Connection ~ 8550 5200
 Wire Wire Line
-	8550 6150 8650 6150
+	8550 5200 8650 5200
 $Comp
 L Transformer_WUT:Coilcraft_PWB_Type-B T1
 U 1 1 5DAEE675
@@ -1311,17 +1300,6 @@ Connection ~ 6550 5900
 Wire Wire Line
 	6550 5900 6850 5900
 $Comp
-L Device:C C105
-U 1 1 5DB5201D
-P 7900 1050
-F 0 "C105" H 8015 1096 50  0000 L CNN
-F 1 "100n" H 8015 1005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7938 900 50  0001 C CNN
-F 3 "~" H 7900 1050 50  0001 C CNN
-	1    7900 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C106
 U 1 1 5DB54406
 P 8300 1050
@@ -1366,10 +1344,6 @@ F 3 "~" H 9900 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 1200 7900 1250
-Wire Wire Line
-	7900 1250 8300 1250
-Wire Wire Line
 	9100 1200 9100 1250
 Connection ~ 9100 1250
 Wire Wire Line
@@ -1379,13 +1353,8 @@ Wire Wire Line
 	8700 1250 8900 1250
 Wire Wire Line
 	8300 1200 8300 1250
-Connection ~ 8300 1250
 Wire Wire Line
 	8300 1250 8700 1250
-Wire Wire Line
-	7900 900  7900 800 
-Wire Wire Line
-	7900 800  8300 800 
 Wire Wire Line
 	9100 900  9100 800 
 Connection ~ 9100 800 
@@ -1426,14 +1395,9 @@ Wire Wire Line
 Wire Wire Line
 	11000 800  11000 750 
 Wire Wire Line
-	7900 800  7750 800 
-Wire Wire Line
 	7750 800  7750 1800
 Wire Wire Line
 	7750 1800 8450 1800
-Wire Wire Line
-	8450 1800 8450 2050
-Connection ~ 7900 800 
 Text GLabel 7300 4100 0    50   Input ~ 0
 ADC_DITH
 Wire Wire Line
@@ -1643,8 +1607,6 @@ F 3 "~" H 10450 1550 50  0001 C CNN
 	1    10450 1550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8650 2050 8650 1550
 $Comp
 L power:GND #PWR0180
 U 1 1 5E241BEC
@@ -1743,197 +1705,6 @@ $EndComp
 Connection ~ 10050 1550
 Wire Wire Line
 	10050 1550 10250 1550
-Text GLabel 10250 2500 2    50   Output ~ 0
-ADC_D0-
-Text GLabel 10250 2600 2    50   Output ~ 0
-ADC_D0+
-Text GLabel 10250 2700 2    50   Output ~ 0
-ADC_D1-
-Text GLabel 10250 2800 2    50   Output ~ 0
-ADC_D1+
-Text GLabel 10250 2900 2    50   Output ~ 0
-ADC_D2-
-Text GLabel 10250 3000 2    50   Output ~ 0
-ADC_D2+
-Text GLabel 10250 3100 2    50   Output ~ 0
-ADC_D3-
-Text GLabel 10250 3200 2    50   Output ~ 0
-ADC_D3+
-Text GLabel 10250 3300 2    50   Output ~ 0
-ADC_D4-
-Text GLabel 10250 3800 2    50   Output ~ 0
-ADC_D6+
-Text GLabel 10250 4300 2    50   Output ~ 0
-ADC_D9-
-Text GLabel 10250 4600 2    50   Output ~ 0
-ADC_D10+
-Text GLabel 10250 4700 2    50   Output ~ 0
-ADC_D11-
-Text GLabel 10250 4800 2    50   Output ~ 0
-ADC_D11+
-Text GLabel 10250 4900 2    50   Output ~ 0
-ADC_D12-
-Text GLabel 10250 5000 2    50   Output ~ 0
-ADC_D12+
-Text GLabel 10250 5100 2    50   Output ~ 0
-ADC_D13-
-Text GLabel 10250 5200 2    50   Output ~ 0
-ADC_D13+
-Text GLabel 10250 5300 2    50   Output ~ 0
-ADC_D14-
-Text GLabel 10250 5400 2    50   Output ~ 0
-ADC_D14+
-Text GLabel 10250 5500 2    50   Output ~ 0
-ADC_D15-
-Text GLabel 10250 5600 2    50   Output ~ 0
-ADC_D15+
-Wire Wire Line
-	9200 2500 10250 2500
-Wire Wire Line
-	9200 2600 10250 2600
-Wire Wire Line
-	9200 2700 10250 2700
-Wire Wire Line
-	9200 2800 10250 2800
-Wire Wire Line
-	9200 2900 10250 2900
-Wire Wire Line
-	9200 3000 10250 3000
-Wire Wire Line
-	9200 3100 10250 3100
-Wire Wire Line
-	9200 3200 10250 3200
-Wire Wire Line
-	9200 3300 10250 3300
-Wire Wire Line
-	9200 3400 10250 3400
-Wire Wire Line
-	9200 3500 10250 3500
-Wire Wire Line
-	9200 3600 10250 3600
-Wire Wire Line
-	9200 3700 10250 3700
-Wire Wire Line
-	9200 3800 10250 3800
-Wire Wire Line
-	9200 3900 10250 3900
-Wire Wire Line
-	9200 4000 10250 4000
-Wire Wire Line
-	9200 4100 10250 4100
-Wire Wire Line
-	9200 4200 10250 4200
-Wire Wire Line
-	9200 4300 10250 4300
-Wire Wire Line
-	9200 4400 10250 4400
-Wire Wire Line
-	9200 4500 10250 4500
-Wire Wire Line
-	9200 4600 10250 4600
-Wire Wire Line
-	9200 4700 10250 4700
-Wire Wire Line
-	9200 4800 10250 4800
-Wire Wire Line
-	9200 4900 10250 4900
-Wire Wire Line
-	9200 5000 10250 5000
-Wire Wire Line
-	9200 5100 10250 5100
-Wire Wire Line
-	9200 5200 10250 5200
-Wire Wire Line
-	9200 5300 10250 5300
-Wire Wire Line
-	9200 5400 10250 5400
-Wire Wire Line
-	9200 5500 10250 5500
-Wire Wire Line
-	9200 5600 10250 5600
-Text GLabel 10250 2300 2    50   Output ~ 0
-ADC_CLK+
-Text GLabel 10250 2400 2    50   Output ~ 0
-ADC_CLK-
-Wire Wire Line
-	9200 2200 9750 2200
-Wire Wire Line
-	9750 2200 9750 2300
-Wire Wire Line
-	9750 2300 10250 2300
-Wire Wire Line
-	10250 2400 9650 2400
-Wire Wire Line
-	9650 2400 9650 2300
-Wire Wire Line
-	9650 2300 9200 2300
-Text GLabel 10250 3400 2    50   Output ~ 0
-ADC_D4+
-Text GLabel 10250 3500 2    50   Output ~ 0
-ADC_D5-
-Text GLabel 10250 3600 2    50   Output ~ 0
-ADC_D5+
-Text GLabel 10250 3700 2    50   Output ~ 0
-ADC_D6-
-Text GLabel 10250 3900 2    50   Output ~ 0
-ADC_D7-
-Text GLabel 10250 4200 2    50   Output ~ 0
-ADC_D8+
-Text GLabel 10250 4400 2    50   Output ~ 0
-ADC_D9+
-Text GLabel 10250 4500 2    50   Output ~ 0
-ADC_D10-
-Text GLabel 10250 4000 2    50   Output ~ 0
-ADC_D7+
-Text GLabel 10250 4100 2    50   Output ~ 0
-ADC_D8-
-$Comp
-L IC_WUT:TLV7031DCK U29
-U 1 1 5DED5BDD
-P 9800 6150
-F 0 "U29" H 9900 6300 50  0000 L CNN
-F 1 "TLV7031DCK" H 9950 6000 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 9800 6150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv7031.pdf" H 9800 6150 50  0001 C CNN
-	1    9800 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 5800 9550 5800
-Wire Wire Line
-	9550 5800 9550 6050
-Wire Wire Line
-	9200 5900 9450 5900
-Wire Wire Line
-	9450 5900 9450 6250
-$Comp
-L power:GND #PWR0182
-U 1 1 5DF04AFD
-P 9800 6450
-F 0 "#PWR0182" H 9800 6200 50  0001 C CNN
-F 1 "GND" H 9805 6277 50  0000 C CNN
-F 2 "" H 9800 6450 50  0001 C CNN
-F 3 "" H 9800 6450 50  0001 C CNN
-	1    9800 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V8 #PWR0183
-U 1 1 5DF1C4D6
-P 9800 5850
-F 0 "#PWR0183" H 9800 5700 50  0001 C CNN
-F 1 "+1V8" H 9815 6023 50  0000 C CNN
-F 2 "" H 9800 5850 50  0001 C CNN
-F 3 "" H 9800 5850 50  0001 C CNN
-	1    9800 5850
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 6150 2    50   Output ~ 0
-ADC_Overflow
-Wire Wire Line
-	10350 6150 10200 6150
-Wire Wire Line
-	9450 6250 9550 6250
 $Comp
 L FET_WUT:SI1539CDL-T1-GE3 Q16
 U 1 1 5DFF3F4A
@@ -2045,4 +1816,94 @@ Wire Wire Line
 	9100 800  9700 800 
 Wire Wire Line
 	9100 1250 9900 1250
+Wire Wire Line
+	7750 800  8300 800 
+$Comp
+L IC_WUT:LTC2216_Full_Rate_CMOS U20
+U 1 1 5DBDA317
+P 8550 3850
+F 0 "U20" H 8900 5200 50  0000 C CNN
+F 1 "LTC2216" H 8850 2650 50  0000 C CNN
+F 2 "IC_WUT:QFN-64-1EP_9x9mm_P0.5mm_EP7.15x7.15mm" H 8500 3800 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/22165f.pdf" H 8450 3850 50  0001 C CNN
+	1    8550 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1800 8450 2450
+Wire Wire Line
+	8650 1550 8650 2450
+Text GLabel 9900 4850 2    50   Output ~ 0
+ADC_Overflow
+Wire Wire Line
+	9200 4850 9900 4850
+Wire Wire Line
+	9200 2900 9900 2900
+NoConn ~ 9200 2800
+Text GLabel 9900 2900 2    50   Output ~ 0
+ADC_Clk
+Wire Wire Line
+	9200 3150 9900 3150
+Text GLabel 9900 3150 2    50   Output ~ 0
+ADC_D0
+Wire Wire Line
+	9200 3250 9900 3250
+Text GLabel 9900 3250 2    50   Output ~ 0
+ADC_D1
+Wire Wire Line
+	9200 3350 9900 3350
+Text GLabel 9900 3350 2    50   Output ~ 0
+ADC_D2
+Wire Wire Line
+	9200 3450 9900 3450
+Text GLabel 9900 3450 2    50   Output ~ 0
+ADC_D3
+Wire Wire Line
+	9200 3550 9900 3550
+Text GLabel 9900 3550 2    50   Output ~ 0
+ADC_D4
+Wire Wire Line
+	9200 3650 9900 3650
+Text GLabel 9900 3650 2    50   Output ~ 0
+ADC_D5
+Wire Wire Line
+	9200 3750 9900 3750
+Text GLabel 9900 3750 2    50   Output ~ 0
+ADC_D6
+Wire Wire Line
+	9200 3850 9900 3850
+Text GLabel 9900 3850 2    50   Output ~ 0
+ADC_D7
+Wire Wire Line
+	9200 3950 9900 3950
+Text GLabel 9900 3950 2    50   Output ~ 0
+ADC_D8
+Wire Wire Line
+	9200 4050 9900 4050
+Text GLabel 9900 4050 2    50   Output ~ 0
+ADC_D9
+Wire Wire Line
+	9200 4150 9900 4150
+Text GLabel 9900 4150 2    50   Output ~ 0
+ADC_D10
+Wire Wire Line
+	9200 4250 9900 4250
+Text GLabel 9900 4250 2    50   Output ~ 0
+ADC_D11
+Wire Wire Line
+	9200 4350 9900 4350
+Text GLabel 9900 4350 2    50   Output ~ 0
+ADC_D12
+Wire Wire Line
+	9200 4450 9900 4450
+Text GLabel 9900 4450 2    50   Output ~ 0
+ADC_D13
+Wire Wire Line
+	9200 4550 9900 4550
+Text GLabel 9900 4550 2    50   Output ~ 0
+ADC_D14
+Wire Wire Line
+	9200 4650 9900 4650
+Text GLabel 9900 4650 2    50   Output ~ 0
+ADC_D15
 $EndSCHEMATC

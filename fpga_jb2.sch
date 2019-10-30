@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 21 22
+Sheet 19 22
 Title ""
 Date ""
 Rev "DRAFT"
@@ -128,7 +128,7 @@ Wire Wire Line
 	6700 3750 6700 3850
 Connection ~ 6700 3850
 Wire Wire Line
-	6700 3850 7050 3850
+	6700 3850 6800 3850
 Wire Wire Line
 	6700 3450 6700 3350
 $Comp
@@ -141,17 +141,6 @@ F 2 "" H 6700 3350 50  0001 C CNN
 F 3 "" H 6700 3350 50  0001 C CNN
 	1    6700 3350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW2
-U 1 1 5DDC046E
-P 6700 4150
-F 0 "SW2" V 6654 4298 50  0000 L CNN
-F 1 "SW_Push" V 6745 4298 50  0000 L CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 6700 4350 50  0001 C CNN
-F 3 "~" H 6700 4350 50  0001 C CNN
-	1    6700 4150
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6700 3950 6700 3850
@@ -169,7 +158,7 @@ $EndComp
 Wire Wire Line
 	6700 4400 6700 4350
 Wire Wire Line
-	4850 3850 6350 3850
+	4850 3850 5900 3850
 $Comp
 L Device:C C68
 U 1 1 5DDC52CC
@@ -195,4 +184,46 @@ Wire Wire Line
 Connection ~ 6500 4400
 Wire Wire Line
 	6500 4400 6700 4400
+$Comp
+L Switch_WUT:Tactile_Switch_Generic SW2
+U 1 1 5DBC8C0C
+P 6800 4150
+F 0 "SW2" V 6800 4298 50  0000 L CNN
+F 1 "Tactile_Switch_Generic" H 6800 4150 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 6800 4150 50  0001 C CNN
+F 3 "" H 6800 4150 50  0001 C CNN
+	1    6800 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 3950 6800 3850
+Connection ~ 6800 3850
+Wire Wire Line
+	6800 3850 7050 3850
+Wire Wire Line
+	6800 4350 6800 4400
+Wire Wire Line
+	6800 4400 6700 4400
+Connection ~ 6700 4400
+$Comp
+L Device:D_TVS D5
+U 1 1 5DBCE8C5
+P 5900 4150
+F 0 "D5" V 5950 4300 50  0000 R CNN
+F 1 "TPD1E1B04DPYR" V 5850 4900 50  0000 R CNN
+F 2 "Diode_WUT:X1SON" H 5900 4150 50  0001 C CNN
+F 3 "~" H 5900 4150 50  0001 C CNN
+	1    5900 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 4000 5900 3850
+Connection ~ 5900 3850
+Wire Wire Line
+	5900 3850 6350 3850
+Wire Wire Line
+	6350 4400 5900 4400
+Wire Wire Line
+	5900 4400 5900 4300
+Connection ~ 6350 4400
 $EndSCHEMATC
