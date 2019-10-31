@@ -449,17 +449,6 @@ F 3 "~" H 1750 3100 50  0001 C CNN
 	1    1750 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C38
-U 1 1 5DBEF4E8
-P 3900 3100
-F 0 "C38" H 4015 3146 50  0000 L CNN
-F 1 "22u" H 4015 3055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 3938 2950 50  0001 C CNN
-F 3 "~" H 3900 3100 50  0001 C CNN
-	1    3900 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 2950 2950 2850
 Connection ~ 2950 2850
@@ -481,19 +470,6 @@ F 3 "" H 1750 3300 50  0001 C CNN
 	1    1750 3300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR056
-U 1 1 5DBF8ECB
-P 3900 3300
-F 0 "#PWR056" H 3900 3050 50  0001 C CNN
-F 1 "GND" H 3905 3127 50  0000 C CNN
-F 2 "" H 3900 3300 50  0001 C CNN
-F 3 "" H 3900 3300 50  0001 C CNN
-	1    3900 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 3300 3900 3250
 Wire Wire Line
 	1750 3300 1750 3250
 $Comp
@@ -547,10 +523,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 2950 3450 2850
 Connection ~ 3450 2850
-Wire Wire Line
-	3450 2850 3900 2850
-Wire Wire Line
-	3900 2950 3900 2850
 $Comp
 L Device:R_Shunt R?
 U 1 1 5D9EBADA
@@ -619,9 +591,6 @@ Wire Wire Line
 	5900 2850 5900 2900
 Wire Wire Line
 	4600 3300 5900 3300
-Wire Wire Line
-	3900 2850 5900 2850
-Connection ~ 3900 2850
 Text Notes 8500 4450 0    100  ~ 0
 Imax = 2.5 * V(SetV) / R_shunt
 $Sheet
@@ -1038,4 +1007,6 @@ Text GLabel 2450 7050 0    50   Input ~ 0
 16V_OK
 Wire Wire Line
 	2450 7050 2550 7050
+Wire Wire Line
+	3450 2850 5900 2850
 $EndSCHEMATC
