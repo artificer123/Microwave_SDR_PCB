@@ -692,4 +692,12 @@ Wire Wire Line
 	2100 2550 3050 2550
 Wire Wire Line
 	3050 2550 3050 2750
+Wire Wire Line
+	4850 7250 5450 7250
+Wire Wire Line
+	4850 7150 5050 7150
+Text GLabel 5050 7150 2    50   Output ~ 0
+~ETH_Link
+Text GLabel 5450 7250 2    50   Output ~ 0
+~ETH_Active
 $EndSCHEMATC

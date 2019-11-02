@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 20
+Sheet 6 20
 Title ""
 Date ""
 Rev "DRAFT"
@@ -59,9 +59,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 4150 6650 4300
 Wire Wire Line
-	6650 4600 6650 4950
-Wire Wire Line
-	6650 4950 6050 4950
+	6650 4600 6650 4800
 Wire Wire Line
 	5200 4050 5450 4050
 $Comp
@@ -146,7 +144,7 @@ F 4 "744774022" V 3649 3950 50  0000 C CNN "MPN"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2900 3950 3100 3950
+	2300 3950 3100 3950
 Wire Wire Line
 	3700 3950 3950 3950
 Wire Wire Line
@@ -262,9 +260,6 @@ Wire Wire Line
 Connection ~ 6050 4950
 Text Notes 3100 5300 0    50   ~ 0
 Agnd is INTERNALLY connected to Gnd.\nDatasheet says use Agnd as ground for FB divider but do not externally connect to Gnd
-Wire Wire Line
-	6650 4950 7500 4950
-Connection ~ 6650 4950
 Text Notes 6900 3900 0    50   ~ 0
 Vfb = 0.796V
 Wire Wire Line
@@ -296,8 +291,6 @@ Wire Wire Line
 	5950 4950 6050 4950
 Wire Wire Line
 	4350 3950 4550 3950
-Wire Wire Line
-	4350 4950 4800 4950
 $Comp
 L Device:R R?
 U 1 1 5D4BACAD
@@ -333,9 +326,6 @@ F 3 "~" H 4800 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 4800 4800 4950
-Connection ~ 4800 4950
-Wire Wire Line
 	4800 4500 4800 4400
 Wire Wire Line
 	4800 4000 4800 3950
@@ -358,11 +348,11 @@ Ven > 1.279V to enable
 Text Notes 7100 5350 0    50   ~ 0
 Feedback should be taken with thin\ntrace from positive side of 220uF
 Connection ~ 8450 3950
-Text HLabel 9050 3950 2    50   Output ~ 0
+Text HLabel 9650 3950 2    50   Output ~ 0
 Vout
 Wire Wire Line
-	8450 3950 9050 3950
-Text HLabel 2900 3950 0    50   Input ~ 0
+	8450 3950 9650 3950
+Text HLabel 2300 3950 0    50   Input ~ 0
 Vin
 Wire Wire Line
 	8000 3950 8450 3950
@@ -371,13 +361,11 @@ Wire Wire Line
 Text HLabel 7050 4800 2    50   Input ~ 0
 FB_Gnd
 Wire Wire Line
-	7050 4800 5950 4800
+	7050 4800 6650 4800
 Text HLabel 7050 4400 2    50   Input ~ 0
 FB
 Wire Wire Line
 	7050 4400 6950 4400
-Wire Wire Line
-	4800 4950 5200 4950
 $Comp
 L Device:R R?
 U 1 1 5D6162D4
@@ -396,11 +384,6 @@ F 3 "~" H 5200 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 4050 5200 4500
-Wire Wire Line
-	5200 4800 5200 4950
-Connection ~ 5200 4950
-Wire Wire Line
-	5200 4950 5950 4950
 $Comp
 L power:PWR_FLAG #FLG09
 U 1 1 5D93E338
@@ -417,4 +400,59 @@ $EndComp
 Connection ~ 4550 3950
 Wire Wire Line
 	4550 3950 4800 3950
+Wire Wire Line
+	4350 4950 5950 4950
+Wire Wire Line
+	5200 4800 5200 4850
+Wire Wire Line
+	5200 4850 5950 4850
+Wire Wire Line
+	5950 4850 5950 4800
+Connection ~ 5950 4800
+Wire Wire Line
+	5200 4850 4800 4850
+Wire Wire Line
+	4800 4850 4800 4800
+Connection ~ 5200 4850
+Connection ~ 6650 4800
+Wire Wire Line
+	6650 4800 5950 4800
+Wire Wire Line
+	6050 4950 7500 4950
+$Comp
+L Shield_WUT:Shield H2
+U 1 1 5E0C550F
+P 5950 5800
+AR Path="/5D688202/5D6884F0/5D6A83C4/5E0C550F" Ref="H2"  Part="1" 
+AR Path="/5D688202/5D6884F0/5D640048/5E0C550F" Ref="H3"  Part="1" 
+F 0 "H3" V 5988 5722 50  0000 R CNN
+F 1 "Shield" V 5897 5722 50  0000 R CNN
+F 2 "Shield_WUT:Shield_Masach_MS570-10_52.7x30.7x6mm_TH" H 5950 5800 50  0001 C CNN
+F 3 "" H 5950 5800 50  0001 C CNN
+	1    5950 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 5E0C5A4D
+P 5950 6000
+AR Path="/5D688202/5D6884F0/5D6A83C4/5E0C5A4D" Ref="#PWR0164"  Part="1" 
+AR Path="/5D688202/5D6884F0/5D640048/5E0C5A4D" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 5950 5750 50  0001 C CNN
+F 1 "GND" H 5955 5827 50  0000 C CNN
+F 2 "" H 5950 6000 50  0001 C CNN
+F 3 "" H 5950 6000 50  0001 C CNN
+	1    5950 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 6000 5950 5900
+Wire Notes Line
+	2550 5950 2550 3150
+Wire Notes Line
+	2550 3150 9350 3150
+Wire Notes Line
+	9350 3150 9350 5950
+Wire Notes Line
+	2550 5950 9350 5950
 $EndSCHEMATC
