@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 22
+Sheet 1 20
 Title ""
 Date ""
 Rev "DRAFT"
@@ -43,7 +43,7 @@ F0 "Power Supply" 50
 F1 "regulators_top.sch" 50
 $EndSheet
 $Sheet
-S 8050 1500 1650 1150
+S 950  800  1650 1150
 U 5D96568C
 F0 "ADC" 50
 F1 "ltc2216.sch" 50
