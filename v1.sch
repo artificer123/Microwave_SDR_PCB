@@ -60,4 +60,10 @@ U 5DDE4073
 F0 "DAC" 50
 F1 "dac.sch" 50
 $EndSheet
+$Sheet
+S 2100 5250 2600 1250
+U 5DBEECB6
+F0 "HDMI" 50
+F1 "hdmi.sch" 50
+$EndSheet
 $EndSCHEMATC

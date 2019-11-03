@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 19 20
+Sheet 16 20
 Title ""
 Date ""
 Rev "DRAFT"
@@ -48,8 +48,6 @@ Connection ~ 4100 8550
 Wire Wire Line
 	4100 8550 4200 8550
 Wire Wire Line
-	3350 7550 3000 7550
-Wire Wire Line
 	3350 7650 3000 7650
 Wire Wire Line
 	3350 7750 3000 7750
@@ -57,8 +55,6 @@ Wire Wire Line
 	3350 7850 3000 7850
 Wire Wire Line
 	3350 7950 3000 7950
-Text GLabel 3000 7550 0    50   Output ~ 0
-JTAG_VCC
 Text GLabel 3000 7650 0    50   Input ~ 0
 JTAG_TMS
 Text GLabel 3000 7750 0    50   Input ~ 0
@@ -226,4 +222,78 @@ Wire Wire Line
 Wire Wire Line
 	5900 4400 5900 4300
 Connection ~ 6350 4400
+Wire Wire Line
+	4850 7850 5350 7850
+Wire Wire Line
+	4850 7750 5350 7750
+Wire Wire Line
+	4850 7650 5350 7650
+Wire Wire Line
+	4850 7550 5350 7550
+Wire Wire Line
+	4850 7350 5350 7350
+Wire Wire Line
+	4850 7250 5350 7250
+Wire Wire Line
+	4850 7150 5350 7150
+Wire Wire Line
+	4850 7050 5350 7050
+Wire Wire Line
+	4850 6850 5350 6850
+Wire Wire Line
+	4850 6750 5350 6750
+Wire Wire Line
+	4850 6650 5350 6650
+Wire Wire Line
+	4850 6550 5350 6550
+Wire Wire Line
+	4850 6350 5350 6350
+Wire Wire Line
+	4850 6250 5350 6250
+Wire Wire Line
+	4850 6150 5350 6150
+Wire Wire Line
+	4850 6050 5350 6050
+Text GLabel 5350 7050 2    50   Output ~ 0
+HDMI_B3
+Text GLabel 5350 7150 2    50   Output ~ 0
+HDMI_B2
+Text GLabel 5350 7250 2    50   Output ~ 0
+HDMI_CLK
+Text GLabel 5350 7350 2    50   Output ~ 0
+HDMI_B1
+Text GLabel 5350 7550 2    50   Output ~ 0
+HDMI_B0
+Text GLabel 5350 7650 2    50   Output ~ 0
+HDMI_Active
+Text GLabel 5350 7750 2    50   Output ~ 0
+HDMI_HSync
+Text GLabel 5350 7850 2    50   Output ~ 0
+HDMI_VSync
+Text GLabel 5350 6050 2    50   Output ~ 0
+HDMI_R3
+Text GLabel 5350 6150 2    50   Output ~ 0
+HDMI_R2
+Text GLabel 5350 6250 2    50   Output ~ 0
+HDMI_R1
+Text GLabel 5350 6350 2    50   Output ~ 0
+HDMI_R0
+Text GLabel 5350 6550 2    50   Output ~ 0
+HDMI_G3
+Text GLabel 5350 6650 2    50   Output ~ 0
+HDMI_G2
+Text GLabel 5350 6750 2    50   Output ~ 0
+HDMI_G1
+Text GLabel 5350 6850 2    50   Output ~ 0
+HDMI_G0
+NoConn ~ 3350 7550
+NoConn ~ 4850 7950
+Wire Wire Line
+	3350 7450 3000 7450
+Wire Wire Line
+	3350 7350 3000 7350
+Text GLabel 3000 7450 0    50   Output ~ 0
+~VDMA_Lock
+Text GLabel 3000 7350 0    50   Output ~ 0
+~VDMA_Underflow
 $EndSCHEMATC

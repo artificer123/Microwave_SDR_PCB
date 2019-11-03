@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 16 20
+Sheet 15 20
 Title ""
 Date ""
 Rev "DRAFT"
@@ -464,7 +464,7 @@ Wire Wire Line
 	3350 6550 2950 6550
 Text GLabel 5250 6850 2    50   Input ~ 0
 UART_DEBUG_TO_FPGA
-Text GLabel 2950 6550 0    50   Input ~ 0
+Text GLabel 2950 6550 0    50   Output ~ 0
 UART_DEBUG_FROM_FPGA
 Wire Wire Line
 	3200 5950 3200 5850
@@ -590,42 +590,6 @@ Wire Wire Line
 	1750 6350 2300 6350
 Wire Wire Line
 	2300 6350 2300 6150
-$Comp
-L Connector:Conn_01x02_Male J11
-U 1 1 5DC67163
-P 1100 6700
-F 0 "J11" H 1208 6881 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 1208 6790 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1100 6700 50  0001 C CNN
-F 3 "~" H 1100 6700 50  0001 C CNN
-	1    1100 6700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 6700 1850 6700
-Wire Wire Line
-	1850 6700 1850 6450
-Wire Wire Line
-	1850 6450 2400 6450
-Wire Wire Line
-	2400 6450 2400 6250
-Wire Wire Line
-	2400 6250 3350 6250
-$Comp
-L power:GND #PWR0122
-U 1 1 5DC73354
-P 1400 6850
-F 0 "#PWR0122" H 1400 6600 50  0001 C CNN
-F 1 "GND" H 1405 6677 50  0000 C CNN
-F 2 "" H 1400 6850 50  0001 C CNN
-F 3 "" H 1400 6850 50  0001 C CNN
-	1    1400 6850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 6800 1400 6800
-Wire Wire Line
-	1400 6800 1400 6850
 Text GLabel 1700 3700 0    50   Output ~ 0
 ADC_RAND
 Text GLabel 1700 3800 0    50   Input ~ 0
@@ -700,4 +664,15 @@ Text GLabel 5050 7150 2    50   Output ~ 0
 ~ETH_Link
 Text GLabel 5450 7250 2    50   Output ~ 0
 ~ETH_Active
+Wire Wire Line
+	3350 7250 2950 7250
+Wire Wire Line
+	3350 7150 2950 7150
+Text GLabel 2950 7250 0    50   Output ~ 0
+UART_USER_FROM_FPGA
+Text GLabel 2950 7150 0    50   Input ~ 0
+UART_USER_TO_FPGA
+Text Notes 1000 7250 0    50   ~ 0
+MIO are 3V3 LVCMOS
+NoConn ~ 3350 6250
 $EndSCHEMATC
