@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 20
+Sheet 12 20
 Title ""
 Date ""
 Rev ""
@@ -233,11 +233,11 @@ F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7250 1100 6700 1100
+	7250 3900 6700 3900
 Wire Wire Line
-	7800 1000 6700 1000
+	7800 3800 6700 3800
 Wire Wire Line
-	8350 900  6700 900 
+	8350 3700 6700 3700
 Wire Wire Line
 	9900 1950 9900 1900
 Wire Wire Line
@@ -329,11 +329,11 @@ F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9350 1100 8800 1100
+	9350 2500 8800 2500
 Wire Wire Line
-	9900 1000 8800 1000
+	9900 2400 8800 2400
 Wire Wire Line
-	10450 900  8800 900 
+	10450 2300 8800 2300
 Wire Wire Line
 	7800 3350 7800 3300
 Wire Wire Line
@@ -521,11 +521,11 @@ F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9350 2500 8800 2500
+	9350 1100 8800 1100
 Wire Wire Line
-	9900 2400 8800 2400
+	9900 1000 8800 1000
 Wire Wire Line
-	10450 2300 8800 2300
+	10450 900  8800 900 
 Wire Wire Line
 	7800 4750 7800 4700
 Wire Wire Line
@@ -617,24 +617,24 @@ F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7250 3900 6700 3900
+	7250 1100 6700 1100
 Wire Wire Line
-	7800 3800 6700 3800
+	7800 1000 6700 1000
 Wire Wire Line
-	8350 3700 6700 3700
+	8350 900  6700 900 
 Wire Wire Line
 	7050 5400 7050 5200
-Text Label 6700 900  0    50   ~ 0
+Text Label 6700 3700 0    50   ~ 0
 12V_IFault
-Text Label 6700 1000 0    50   ~ 0
+Text Label 6700 3800 0    50   ~ 0
 12V_OK
-Text Label 6700 1100 0    50   ~ 0
+Text Label 6700 3900 0    50   ~ 0
 12V_VFault
-Text Label 8800 900  0    50   ~ 0
+Text Label 8800 2300 0    50   ~ 0
 3V3_IFault
-Text Label 8800 1000 0    50   ~ 0
+Text Label 8800 2400 0    50   ~ 0
 3V3_OK
-Text Label 8800 1100 0    50   ~ 0
+Text Label 8800 2500 0    50   ~ 0
 3V3_VFault
 Text Label 6700 2300 0    50   ~ 0
 5V_IFault
@@ -642,17 +642,17 @@ Text Label 6700 2400 0    50   ~ 0
 5V_OK
 Text Label 6700 2500 0    50   ~ 0
 5V_VFault
-Text Label 8800 2300 0    50   ~ 0
+Text Label 8800 900  0    50   ~ 0
 1V8_IFault
-Text Label 8800 2400 0    50   ~ 0
+Text Label 8800 1000 0    50   ~ 0
 1V8_OK
-Text Label 8800 2500 0    50   ~ 0
+Text Label 8800 1100 0    50   ~ 0
 1V8_VFault
-Text Label 6700 3700 0    50   ~ 0
+Text Label 6700 900  0    50   ~ 0
 3V3ADC_IFault
-Text Label 6700 3800 0    50   ~ 0
+Text Label 6700 1000 0    50   ~ 0
 3V3ADC_OK
-Text Label 6700 3900 0    50   ~ 0
+Text Label 6700 1100 0    50   ~ 0
 3V3ADC_VFault
 $Comp
 L power:GND #PWR083
@@ -859,37 +859,37 @@ Wire Wire Line
 	7600 5100 6250 5100
 Text Label 6250 5100 0    50   ~ 0
 UART_Error
-Text GLabel 4300 2450 0    50   Input ~ 0
-12V_I_Good
-Text GLabel 4300 2550 0    50   Input ~ 0
-12V_V_Good
-Text GLabel 1450 4850 0    50   Input ~ 0
-5V_I_Good
-Text GLabel 1450 4950 0    50   Input ~ 0
-5V_V_Good
-Text GLabel 4300 2750 0    50   Input ~ 0
-3V3_V_Good
 Text GLabel 4300 2650 0    50   Input ~ 0
-3V3_I_Good
+12V_I_Good
+Text GLabel 4300 2750 0    50   Input ~ 0
+12V_V_Good
 Text GLabel 1450 5050 0    50   Input ~ 0
-1V8_I_Good
+5V_I_Good
 Text GLabel 1450 5150 0    50   Input ~ 0
-1V8_V_Good
+5V_V_Good
+Text GLabel 1350 4950 0    50   Input ~ 0
+3V3_V_Good
+Text GLabel 1350 4850 0    50   Input ~ 0
+3V3_I_Good
 Text GLabel 1450 5250 0    50   Input ~ 0
-3V3ADC_I_Good
+1V8_I_Good
 Text GLabel 1450 5350 0    50   Input ~ 0
+1V8_V_Good
+Text GLabel 1450 5450 0    50   Input ~ 0
+3V3ADC_I_Good
+Text GLabel 1450 5550 0    50   Input ~ 0
 3V3ADC_V_Good
-Text Label 3950 5650 0    50   ~ 0
+Text Label 3950 1850 0    50   ~ 0
 12V_IFault
-Text Label 3950 5550 0    50   ~ 0
+Text Label 1000 2750 0    50   ~ 0
 12V_OK
-Text Label 3950 5450 0    50   ~ 0
+Text Label 1000 2650 0    50   ~ 0
 12V_VFault
-Text Label 1000 1950 0    50   ~ 0
+Text Label 1000 2550 0    50   ~ 0
 3V3_IFault
-Text Label 1000 1850 0    50   ~ 0
+Text Label 1000 2450 0    50   ~ 0
 3V3_OK
-Text Label 3950 5750 0    50   ~ 0
+Text Label 1000 2350 0    50   ~ 0
 3V3_VFault
 Text Label 1000 2250 0    50   ~ 0
 5V_IFault
@@ -897,31 +897,25 @@ Text Label 1000 2150 0    50   ~ 0
 5V_OK
 Text Label 1000 2050 0    50   ~ 0
 5V_VFault
-Text Label 1000 2350 0    50   ~ 0
+Text Label 3500 5750 0    50   ~ 0
 1V8_VFault
-Text Label 1000 2450 0    50   ~ 0
+Text Label 1000 1850 0    50   ~ 0
 1V8_OK
-Text Label 1000 2550 0    50   ~ 0
+Text Label 1000 1950 0    50   ~ 0
 1V8_IFault
-Text Label 1000 2650 0    50   ~ 0
+Text Label 3500 5450 0    50   ~ 0
 3V3ADC_VFault
-Text Label 1000 2750 0    50   ~ 0
+Text Label 3500 5550 0    50   ~ 0
 3V3ADC_OK
-Text Label 3950 1850 0    50   ~ 0
+Text Label 3500 5650 0    50   ~ 0
 3V3ADC_IFault
-Text Label 3950 2150 0    50   ~ 0
-16V_IFault
-Text Label 3950 1950 0    50   ~ 0
-16V_VFault
-Text GLabel 3900 2050 0    50   Output ~ 0
-16V_OK
 Wire Wire Line
-	4550 4950 4300 4950
-Text GLabel 4300 4950 0    50   Output ~ 0
+	4550 2250 4300 2250
+Text GLabel 4300 2250 0    50   Output ~ 0
 S1_PWR_ENABLE
-Text GLabel 1450 5750 0    50   Output ~ 0
+Text GLabel 4400 2050 0    50   Output ~ 0
 S2_PWR_ENABLE
-Text GLabel 1450 5650 0    50   Output ~ 0
+Text GLabel 4400 1950 0    50   Output ~ 0
 S3_PWR_ENABLE
 Wire Wire Line
 	1000 1850 1600 1850
@@ -946,23 +940,25 @@ Wire Wire Line
 Wire Wire Line
 	3950 1850 4550 1850
 Wire Wire Line
-	3950 1950 4550 1950
+	4550 2450 4300 2450
 Wire Wire Line
-	4550 2250 4300 2250
-Wire Wire Line
-	4550 2350 4300 2350
-Text GLabel 4300 2250 0    50   Output ~ 0
+	4550 2550 4300 2550
+Text GLabel 4300 2450 0    50   Output ~ 0
 UART_PMIC_TO_FPGA
-Text GLabel 4300 2350 0    50   Input ~ 0
+Text GLabel 4300 2550 0    50   Input ~ 0
 UART_PMIC_FROM_FPGA
+Wire Wire Line
+	1350 4950 1600 4950
+Wire Wire Line
+	1350 4850 1600 4850
 Wire Wire Line
 	4300 2750 4550 2750
 Wire Wire Line
 	4300 2650 4550 2650
 Wire Wire Line
-	4300 2550 4550 2550
+	1450 5650 1600 5650
 Wire Wire Line
-	4300 2450 4550 2450
+	1450 5550 1600 5550
 Wire Wire Line
 	1450 5450 1600 5450
 Wire Wire Line
@@ -973,13 +969,9 @@ Wire Wire Line
 	1450 5150 1600 5150
 Wire Wire Line
 	1450 5050 1600 5050
-Wire Wire Line
-	1450 4950 1600 4950
-Wire Wire Line
-	1450 4850 1600 4850
-Text Label 3750 5050 0    50   ~ 0
+Text Label 3750 2350 0    50   ~ 0
 I2C_Error
-Text Label 3750 4850 0    50   ~ 0
+Text Label 3750 2150 0    50   ~ 0
 UART_Error
 Wire Wire Line
 	8350 900  8350 1250
@@ -1017,10 +1009,6 @@ Wire Wire Line
 	6550 6000 6550 6100
 Wire Wire Line
 	7600 6000 7600 6100
-Wire Wire Line
-	3950 2150 4550 2150
-Wire Wire Line
-	3900 2050 4550 2050
 $Comp
 L LED_WUT:LED_Cree_CLX6E-FKC LD9
 U 2 1 5DB53A79
@@ -1121,13 +1109,13 @@ F 3 "~" H 7050 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 5050 4550 5050
+	3750 2350 4550 2350
 Wire Wire Line
-	3750 4850 4550 4850
+	3750 2150 4550 2150
 Wire Wire Line
-	1450 5750 1600 5750
+	4400 2050 4550 2050
 Wire Wire Line
-	1450 5650 1600 5650
+	4400 1950 4550 1950
 $Comp
 L Device:C C48
 U 1 1 5DBAB019
@@ -1157,9 +1145,8 @@ F 3 "" H 3050 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3050 1800 3050 1750
-Text GLabel 1450 5450 0    50   Input ~ 0
+Text GLabel 1450 5650 0    50   Input ~ 0
 FPGA_PWR_GOOD
-NoConn ~ 1600 5550
 $Comp
 L LED_WUT:LED_Cree_CLX6E-FKC LD9
 U 3 1 5DAEC3B6
@@ -1184,4 +1171,5 @@ F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" 
 $EndComp
 NoConn ~ 10850 6050
 NoConn ~ 10850 5750
+NoConn ~ 1600 5750
 $EndSCHEMATC
