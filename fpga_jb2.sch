@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
-Sheet 16 26
+Sheet 16 27
 Title ""
 Date ""
 Rev "DRAFT"
@@ -296,4 +296,19 @@ Text GLabel 3000 7450 0    50   Output ~ 0
 ~VDMA_Lock
 Text GLabel 3000 7350 0    50   Output ~ 0
 ~VDMA_Underflow
+$Comp
+L power:+3.3V #PWR0162
+U 1 1 5DD96845
+P 2850 3300
+F 0 "#PWR0162" H 2850 3150 50  0001 C CNN
+F 1 "+3.3V" H 2865 3473 50  0000 C CNN
+F 2 "" H 2850 3300 50  0001 C CNN
+F 3 "" H 2850 3300 50  0001 C CNN
+	1    2850 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3350 2850 3350
+Wire Wire Line
+	2850 3350 2850 3300
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 26
+Sheet 1 27
 Title ""
 Date ""
 Rev "DRAFT"
@@ -34,7 +34,7 @@ $EndSheet
 $Sheet
 S 950  800  1650 1150
 U 5D96568C
-F0 "ADC" 50
+F0 "RF ADC" 50
 F1 "ltc2216.sch" 50
 $EndSheet
 $Sheet
@@ -42,12 +42,6 @@ S 3850 1300 1550 800
 U 5D96AFF8
 F0 "FPGA" 50
 F1 "fpga.sch" 50
-$EndSheet
-$Sheet
-S 8050 3450 1700 1200
-U 5DDE4073
-F0 "DAC" 50
-F1 "dac.sch" 50
 $EndSheet
 $Sheet
 S 2100 5250 2600 1250
@@ -226,4 +220,16 @@ F 3 "" H 10400 6150 50  0001 C CNN
 	1    10400 6150
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 8000 3400 2100 1500
+U 5DD6D4F3
+F0 "AF DAC" 50
+F1 "af_dac.sch" 50
+$EndSheet
+$Sheet
+S 1200 2500 1550 1050
+U 5DD6E120
+F0 "RF DAC" 50
+F1 "ad9744.sch" 50
+$EndSheet
 $EndSCHEMATC
