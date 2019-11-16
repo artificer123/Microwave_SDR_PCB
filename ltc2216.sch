@@ -1386,8 +1386,6 @@ Wire Wire Line
 	7750 800  7750 1800
 Wire Wire Line
 	7750 1800 8450 1800
-Text GLabel 7300 4100 0    50   Input ~ 0
-ADC_DITH
 Wire Wire Line
 	5450 5100 5600 5100
 Wire Wire Line
@@ -1727,7 +1725,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 7200 4800 7200
 Text GLabel 4800 7200 0    50   Input ~ 0
-ADC_Overflow
+RF_ADC_Overflow
 $Comp
 L power:+3.3VADC #PWR0114
 U 1 1 5E07DAD7
@@ -1770,7 +1768,7 @@ Wire Wire Line
 Text GLabel 10000 5000 2    50   Output ~ 0
 RF_ADC_Overflow
 Text GLabel 10000 2900 2    50   Output ~ 0
-ADC_Clk_N
+RF_ADC_Clk_N
 Text GLabel 10000 3100 2    50   Output ~ 0
 RF_ADC_D0
 Text GLabel 10000 3200 2    50   Output ~ 0
@@ -2056,7 +2054,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 2800 10000 2800
 Text GLabel 10000 2800 2    50   Output ~ 0
-ADC_Clk_P
+RF_ADC_Clk_P
 Wire Wire Line
 	9700 800  10350 800 
 Wire Wire Line
@@ -2079,4 +2077,25 @@ F 3 "" H 11000 1500 50  0001 C CNN
 	1    11000 1500
 	1    0    0    -1  
 $EndComp
+Text Label 7300 4100 0    50   ~ 0
+ADC_Dither
+$Comp
+L Device:R R120
+U 1 1 5DD62B5C
+P 9600 5750
+F 0 "R120" V 9393 5750 50  0000 C CNN
+F 1 "33" V 9484 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9530 5750 50  0001 C CNN
+F 3 "~" H 9600 5750 50  0001 C CNN
+	1    9600 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 5750 10000 5750
+Wire Wire Line
+	9450 5750 9050 5750
+Text Label 9050 5750 0    50   ~ 0
+ADC_Dither
+Text GLabel 10000 5750 2    50   Output ~ 0
+RF_ADC_Dither
 $EndSCHEMATC

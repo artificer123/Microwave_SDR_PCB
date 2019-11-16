@@ -95,17 +95,6 @@ F 3 "~" H 7800 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Barrel_Jack J1
-U 1 1 5D824471
-P 1400 1950
-F 0 "J1" H 1457 2275 50  0000 C CNN
-F 1 "Powerpole G1377G2" H 1457 2184 50  0000 C CNN
-F 2 "Connector_WUT:Powerpole_PP30-with-1377G2-PCB-pins-25A" H 1450 1910 50  0001 C CNN
-F 3 "~" H 1450 1910 50  0001 C CNN
-	1    1400 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:EMI_Filter_CommonMode FL1
 U 1 1 5D826766
 P 2800 1950
@@ -116,8 +105,6 @@ F 3 "~" H 2800 1990 50  0001 C CNN
 	1    2800 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 2050 2050 2050
 $Comp
 L power:GND #PWR02
 U 1 1 5D8286A6
@@ -218,8 +205,6 @@ F 3 "~" H 2050 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 1850 1800 1850
-Wire Wire Line
 	3350 2350 3000 2350
 Wire Wire Line
 	3000 2350 3000 2050
@@ -312,22 +297,6 @@ Text GLabel 5850 4100 0    50   Input ~ 0
 NoConn ~ 2250 1950
 Wire Wire Line
 	3550 1850 6100 1850
-Wire Wire Line
-	1700 2400 1800 2400
-Wire Wire Line
-	1800 2400 1800 1850
-Connection ~ 1800 1850
-Wire Wire Line
-	1800 1850 1850 1850
-Wire Wire Line
-	1700 2600 1850 2600
-Wire Wire Line
-	2050 2600 2050 2050
-Connection ~ 2050 2050
-Wire Wire Line
-	2050 2050 2600 2050
-Text Notes 1200 3000 0    50   ~ 0
-Only 1 of these connectors\ncan be populated
 $Sheet
 S 1850 4750 2600 2050
 U 5DA7190F
@@ -337,19 +306,23 @@ $EndSheet
 $Comp
 L Connector:Barrel_Jack_Switch J2
 U 1 1 5DDEE68D
-P 1400 2500
-F 0 "J2" H 1457 2817 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H 1457 2726 50  0000 C CNN
-F 2 "Connector_WUT:Barrel-Jack_Cliff_FC681478_TH" H 1450 2460 50  0001 C CNN
-F 3 "~" H 1450 2460 50  0001 C CNN
-	1    1400 2500
+P 1400 1950
+F 0 "J2" H 1457 2267 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1457 2176 50  0000 C CNN
+F 2 "Connector_WUT:Barrel-Jack_Cliff_FC681478_TH" H 1450 1910 50  0001 C CNN
+F 3 "~" H 1450 1910 50  0001 C CNN
+	1    1400 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 2500 1850 2500
+	1700 1850 1850 1850
 Wire Wire Line
-	1850 2500 1850 2600
-Connection ~ 1850 2600
+	1700 2050 1800 2050
 Wire Wire Line
-	1850 2600 2050 2600
+	1800 1950 1800 2050
+Wire Wire Line
+	1700 1950 1800 1950
+Connection ~ 1800 2050
+Wire Wire Line
+	1800 2050 2600 2050
 $EndSCHEMATC

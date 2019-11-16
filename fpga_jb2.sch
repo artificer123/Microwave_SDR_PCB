@@ -223,68 +223,68 @@ Wire Wire Line
 	5900 4400 5900 4300
 Connection ~ 6350 4400
 Wire Wire Line
-	4850 7850 5350 7850
+	3350 7350 2850 7350
 Wire Wire Line
-	4850 7750 5350 7750
+	3350 7250 2850 7250
 Wire Wire Line
-	4850 7650 5350 7650
+	3350 7150 2850 7150
 Wire Wire Line
-	4850 7550 5350 7550
+	3350 7050 2850 7050
 Wire Wire Line
-	4850 7350 5350 7350
+	3350 6850 2850 6850
 Wire Wire Line
-	4850 7250 5350 7250
+	3350 6750 2850 6750
 Wire Wire Line
-	4850 7150 5350 7150
+	3350 6650 2850 6650
 Wire Wire Line
-	4850 7050 5350 7050
+	3350 6550 2850 6550
 Wire Wire Line
-	4850 6850 5350 6850
+	3350 6350 2850 6350
 Wire Wire Line
-	4850 6750 5350 6750
+	3350 6250 2850 6250
 Wire Wire Line
-	4850 6650 5350 6650
+	3350 6150 2850 6150
 Wire Wire Line
-	4850 6550 5350 6550
+	3350 6050 2850 6050
 Wire Wire Line
-	4850 6350 5350 6350
+	3350 5850 2850 5850
 Wire Wire Line
-	4850 6250 5350 6250
+	3350 5750 2850 5750
 Wire Wire Line
-	4850 6150 5350 6150
+	3350 5650 2850 5650
 Wire Wire Line
-	4850 6050 5350 6050
-Text GLabel 5350 7050 2    50   Output ~ 0
+	3350 5550 2850 5550
+Text GLabel 2850 6550 0    50   Output ~ 0
 RF_DAC_D5
-Text GLabel 5350 7150 2    50   Output ~ 0
+Text GLabel 2850 6650 0    50   Output ~ 0
 RF_DAC_D4
-Text GLabel 5350 7250 2    50   Output ~ 0
+Text GLabel 2850 6750 0    50   Output ~ 0
 RF_DAC_D3
-Text GLabel 5350 7350 2    50   Output ~ 0
+Text GLabel 2850 6850 0    50   Output ~ 0
 RF_DAC_D2
-Text GLabel 5350 7550 2    50   Output ~ 0
+Text GLabel 2850 7050 0    50   Output ~ 0
 RF_DAC_D1
-Text GLabel 5350 7650 2    50   Output ~ 0
+Text GLabel 2850 7150 0    50   Output ~ 0
 RF_DAC_D0
-Text GLabel 5350 7750 2    50   Output ~ 0
+Text GLabel 2850 7250 0    50   Output ~ 0
 RF_DAC_CLK_P
-Text GLabel 5350 7850 2    50   Output ~ 0
+Text GLabel 2850 7350 0    50   Output ~ 0
 RF_DAC_CLK_N
-Text GLabel 5350 6050 2    50   Output ~ 0
+Text GLabel 2850 5550 0    50   Output ~ 0
 RF_DAC_D13
-Text GLabel 5350 6150 2    50   Output ~ 0
+Text GLabel 2850 5650 0    50   Output ~ 0
 RF_DAC_D12
-Text GLabel 5350 6250 2    50   Output ~ 0
+Text GLabel 2850 5750 0    50   Output ~ 0
 RF_DAC_D11
-Text GLabel 5350 6350 2    50   Output ~ 0
+Text GLabel 2850 5850 0    50   Output ~ 0
 RF_DAC_D10
-Text GLabel 5350 6550 2    50   Output ~ 0
+Text GLabel 2850 6050 0    50   Output ~ 0
 RF_DAC_D9
-Text GLabel 5350 6650 2    50   Output ~ 0
+Text GLabel 2850 6150 0    50   Output ~ 0
 RF_DAC_D8
-Text GLabel 5350 6750 2    50   Output ~ 0
+Text GLabel 2850 6250 0    50   Output ~ 0
 RF_DAC_D7
-Text GLabel 5350 6850 2    50   Output ~ 0
+Text GLabel 2850 6350 0    50   Output ~ 0
 RF_DAC_D6
 NoConn ~ 3350 7550
 NoConn ~ 4850 7950
@@ -311,72 +311,88 @@ Wire Wire Line
 	3350 3350 2850 3350
 Wire Wire Line
 	2850 3350 2850 3300
-Text GLabel 3000 5650 0    50   Input ~ 0
-ADC_Clk_N
-Text GLabel 3000 5750 0    50   Input ~ 0
+Text GLabel 5200 5650 2    50   Input ~ 0
+RF_ADC_Clk_N
+Text GLabel 5200 5750 2    50   Input ~ 0
 RF_ADC_D0
-Text GLabel 3000 5850 0    50   Input ~ 0
+Text GLabel 5200 5850 2    50   Input ~ 0
 RF_ADC_D1
-Text GLabel 3000 6050 0    50   Input ~ 0
+Text GLabel 5200 6050 2    50   Input ~ 0
 RF_ADC_D2
-Text GLabel 3000 6150 0    50   Input ~ 0
+Text GLabel 5200 6150 2    50   Input ~ 0
 RF_ADC_D3
-Text GLabel 3000 6250 0    50   Input ~ 0
+Text GLabel 5200 6250 2    50   Input ~ 0
 RF_ADC_D4
-Text GLabel 3000 6350 0    50   Input ~ 0
+Text GLabel 5200 6350 2    50   Input ~ 0
 RF_ADC_D5
-Text GLabel 3000 6550 0    50   Input ~ 0
+Text GLabel 5200 6550 2    50   Input ~ 0
 RF_ADC_D6
-Text GLabel 3000 6650 0    50   Input ~ 0
+Text GLabel 5200 6650 2    50   Input ~ 0
 RF_ADC_D7
-Text GLabel 3000 6750 0    50   Input ~ 0
+Text GLabel 5200 6750 2    50   Input ~ 0
 RF_ADC_D8
-Text GLabel 3000 6850 0    50   Input ~ 0
+Text GLabel 5200 6850 2    50   Input ~ 0
 RF_ADC_D9
-Text GLabel 3000 7050 0    50   Input ~ 0
+Text GLabel 5200 7050 2    50   Input ~ 0
 RF_ADC_D10
-Text GLabel 3000 7150 0    50   Input ~ 0
+Text GLabel 5200 7150 2    50   Input ~ 0
 RF_ADC_D11
-Text GLabel 3000 7250 0    50   Input ~ 0
+Text GLabel 5200 7250 2    50   Input ~ 0
 RF_ADC_D12
-Text GLabel 3000 7350 0    50   Input ~ 0
+Text GLabel 5200 7350 2    50   Input ~ 0
 RF_ADC_D13
-Text GLabel 3000 7450 0    50   Input ~ 0
+Text GLabel 5200 7550 2    50   Input ~ 0
 RF_ADC_D14
-Text GLabel 3000 5550 0    50   Input ~ 0
-ADC_Clk_P
+Text GLabel 5200 5550 2    50   Input ~ 0
+RF_ADC_Clk_P
 Wire Wire Line
-	3000 7250 3350 7250
+	5200 7250 4850 7250
 Wire Wire Line
-	3000 7350 3350 7350
+	5200 7350 4850 7350
 Wire Wire Line
-	3000 7450 3350 7450
+	5200 7550 4850 7550
 Wire Wire Line
-	3000 5550 3350 5550
+	5200 5550 4850 5550
 Wire Wire Line
-	3000 5650 3350 5650
+	5200 5650 4850 5650
 Wire Wire Line
-	3000 5750 3350 5750
+	5200 5750 4850 5750
 Wire Wire Line
-	3000 5850 3350 5850
+	5200 5850 4850 5850
 Wire Wire Line
-	3000 6050 3350 6050
+	5200 6050 4850 6050
 Wire Wire Line
-	3000 6150 3350 6150
+	5200 6150 4850 6150
 Wire Wire Line
-	3000 6250 3350 6250
+	5200 6250 4850 6250
 Wire Wire Line
-	3000 6350 3350 6350
+	5200 6350 4850 6350
 Wire Wire Line
-	3000 6550 3350 6550
+	5200 6550 4850 6550
 Wire Wire Line
-	3000 6650 3350 6650
+	5200 6650 4850 6650
 Wire Wire Line
-	3000 6750 3350 6750
+	5200 6750 4850 6750
 Wire Wire Line
-	3000 6850 3350 6850
+	5200 6850 4850 6850
 Wire Wire Line
-	3000 7050 3350 7050
+	5200 7050 4850 7050
 Wire Wire Line
-	3000 7150 3350 7150
+	5200 7150 4850 7150
+Text GLabel 5200 7650 2    50   Input ~ 0
+RF_ADC_D15
+Wire Wire Line
+	5200 7650 4850 7650
+Wire Wire Line
+	4850 7750 5200 7750
+Wire Wire Line
+	4850 7850 5200 7850
+Text GLabel 5200 7750 2    50   Input ~ 0
+RF_ADC_Overflow
+Text GLabel 5200 7850 2    50   Output ~ 0
+RF_ADC_Random
+Wire Wire Line
+	4850 5350 5200 5350
+Text GLabel 5200 5350 2    50   Output ~ 0
+RF_ADC_Dither
 $EndSCHEMATC

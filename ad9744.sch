@@ -501,7 +501,7 @@ U 1 1 5DD01545
 P 5600 6000
 F 0 "H13" V 5638 5922 50  0000 R CNN
 F 1 "Shield" V 5547 5922 50  0000 R CNN
-F 2 "Shield_WUT:Shield_Masach_MS570-10_52.7x30.7x6mm_TH" H 5600 6000 50  0001 C CNN
+F 2 "Shield_WUT:Shield_Masach_MS511-10_51.1x25.7x6.5mm_TH" H 5600 6000 50  0001 C CNN
 F 3 "" H 5600 6000 50  0001 C CNN
 	1    5600 6000
 	0    -1   -1   0   
@@ -918,29 +918,6 @@ Wire Wire Line
 	7450 1000 7550 1000
 Wire Wire Line
 	7050 1000 7250 1000
-$Comp
-L Device:C C?
-U 1 1 5DF5EAED
-P 6650 1250
-AR Path="/5D96568C/5DF5EAED" Ref="C?"  Part="1" 
-AR Path="/5DD6E120/5DF5EAED" Ref="C126"  Part="1" 
-F 0 "C126" H 6765 1296 50  0000 L CNN
-F 1 "100n" H 6765 1205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6688 1100 50  0001 C CNN
-F 3 "~" H 6650 1250 50  0001 C CNN
-	1    6650 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6650 1100 6650 1000
-Connection ~ 6650 1000
-Wire Wire Line
-	6650 1000 7050 1000
-Wire Wire Line
-	6650 1400 6650 1450
-Wire Wire Line
-	6650 1450 7050 1450
-Connection ~ 7050 1450
 Wire Wire Line
 	7050 1450 7250 1450
 $Comp
@@ -1009,8 +986,8 @@ Wire Wire Line
 	5750 1900 6650 1900
 Wire Wire Line
 	5550 1000 5550 2500
-Wire Wire Line
-	5550 1000 6650 1000
 Text Label 6100 1900 0    50   ~ 0
 AVDD
+Wire Wire Line
+	5550 1000 7050 1000
 $EndSCHEMATC
