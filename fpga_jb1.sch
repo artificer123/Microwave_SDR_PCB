@@ -485,17 +485,6 @@ Wire Wire Line
 	3200 2650 3200 2450
 Wire Wire Line
 	3200 2450 2750 2450
-$Comp
-L IC_WUT:TE0720 U17
-U 1 1 5D8D44A8
-P 4100 4850
-F 0 "U17" H 4100 8248 50  0000 C CNN
-F 1 "TE0720" H 4100 8157 50  0000 C CNN
-F 2 "IC_WUT:Trenz_TE0720" H 3650 6750 50  0001 C CNN
-F 3 "" H 3650 6750 50  0001 C CNN
-	1    4100 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3200 2350 3200 1650
 Wire Wire Line
@@ -530,4 +519,103 @@ UART_USER_TO_FPGA
 Text Notes 1000 7250 0    50   ~ 0
 MIO are 3V3 LVCMOS
 NoConn ~ 3350 6250
+Wire Wire Line
+	3350 6450 2950 6450
+Wire Wire Line
+	3350 6350 2950 6350
+Text GLabel 2950 6450 0    50   Output ~ 0
+HDMI_R4
+Text GLabel 2950 6350 0    50   Output ~ 0
+HDMI_R3
+Wire Wire Line
+	3350 6150 2950 6150
+Wire Wire Line
+	3350 6050 2950 6050
+Text GLabel 2950 6150 0    50   Output ~ 0
+HDMI_R2
+Text GLabel 2950 6050 0    50   Output ~ 0
+HDMI_R1
+Wire Wire Line
+	3350 5850 2950 5850
+Wire Wire Line
+	3350 5750 2950 5750
+Text GLabel 2950 5850 0    50   Output ~ 0
+HDMI_R0
+Text GLabel 2950 5750 0    50   Output ~ 0
+HDMI_G5
+Wire Wire Line
+	3350 5650 2950 5650
+Wire Wire Line
+	3350 5550 2950 5550
+Text GLabel 2950 5650 0    50   Output ~ 0
+HDMI_G4
+Text GLabel 2950 5550 0    50   Output ~ 0
+HDMI_G3
+Wire Wire Line
+	3350 5350 2950 5350
+Wire Wire Line
+	3350 5250 2950 5250
+Text GLabel 2950 5350 0    50   Output ~ 0
+HDMI_G2
+Text GLabel 2950 5250 0    50   Output ~ 0
+HDMI_G1
+Wire Wire Line
+	3350 5150 2950 5150
+Wire Wire Line
+	3350 5050 2950 5050
+Text GLabel 2950 5150 0    50   Output ~ 0
+HDMI_G0
+Text GLabel 2950 5050 0    50   Output ~ 0
+HDMI_B4
+Wire Wire Line
+	3350 4850 2950 4850
+Wire Wire Line
+	3350 4750 2950 4750
+Text GLabel 2950 4850 0    50   Output ~ 0
+HDMI_B3
+Text GLabel 2950 4750 0    50   Output ~ 0
+HDMI_Clk
+Wire Wire Line
+	3350 4650 2950 4650
+Wire Wire Line
+	3350 4550 2950 4550
+Text GLabel 2950 4650 0    50   Output ~ 0
+HDMI_B2
+Text GLabel 2950 4550 0    50   Output ~ 0
+HDMI_B1
+Wire Wire Line
+	3350 4150 2950 4150
+Wire Wire Line
+	3350 4050 2950 4050
+Text GLabel 2950 4150 0    50   Output ~ 0
+HDMI_HSync
+Text GLabel 2950 4050 0    50   Output ~ 0
+HDMI_VSync
+Text GLabel 2950 4450 0    50   Output ~ 0
+HDMI_B0
+Text GLabel 2950 4350 0    50   Output ~ 0
+HDMI_Active
+Wire Wire Line
+	2950 4450 3350 4450
+Wire Wire Line
+	2950 4350 3350 4350
+$Comp
+L IC_WUT:TE0720 U17
+U 1 1 5D8D44A8
+P 4100 4850
+F 0 "U17" H 4100 8248 50  0000 C CNN
+F 1 "TE0720" H 4100 8157 50  0000 C CNN
+F 2 "IC_WUT:Trenz_TE0720" H 3650 6750 50  0001 C CNN
+F 3 "" H 3650 6750 50  0001 C CNN
+	1    4100 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6550 5050 6550
+Text GLabel 5050 6550 2    50   Output ~ 0
+~VDMA_Lock
+Wire Wire Line
+	4850 6650 5600 6650
+Text GLabel 5600 6650 2    50   Output ~ 0
+~VDMA_Underflow
 $EndSCHEMATC

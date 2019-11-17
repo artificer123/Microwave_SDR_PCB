@@ -256,37 +256,23 @@ Wire Wire Line
 Wire Wire Line
 	6400 4000 5150 4000
 Wire Wire Line
+	2350 2650 2850 2650
+Wire Wire Line
 	2350 2550 2850 2550
 Wire Wire Line
 	2350 2450 2850 2450
+Wire Wire Line
+	2350 2050 2850 2050
 Wire Wire Line
 	2350 3150 2850 3150
 Wire Wire Line
 	2350 3050 2850 3050
 Wire Wire Line
-	2350 2750 2850 2750
-Wire Wire Line
 	2350 2950 2850 2950
 Wire Wire Line
 	2350 2850 2850 2850
 Wire Wire Line
-	2350 2650 2850 2650
-Wire Wire Line
-	2350 2050 2850 2050
-Wire Wire Line
-	2350 1950 2850 1950
-Wire Wire Line
-	2350 1850 2850 1850
-Wire Wire Line
-	2350 1750 2850 1750
-Wire Wire Line
-	2350 1650 2850 1650
-Wire Wire Line
-	2350 1550 2850 1550
-Wire Wire Line
-	2350 1450 2850 1450
-Wire Wire Line
-	2350 1350 2850 1350
+	2350 2750 2850 2750
 $Comp
 L Device:R_Pack08 RN5
 U 1 1 5CEEF6B3
@@ -364,42 +350,42 @@ Wire Wire Line
 Wire Wire Line
 	6400 3000 5150 3000
 Wire Wire Line
-	5450 1600 5450 1700
+	5450 1350 5450 1450
 Wire Wire Line
-	5600 1600 5450 1600
+	5600 1350 5450 1350
 $Comp
 L power:GND #PWR0165
 U 1 1 5CE5F374
-P 5450 1700
-F 0 "#PWR0165" H 5450 1450 50  0001 C CNN
-F 1 "GND" H 5455 1527 50  0000 C CNN
-F 2 "" H 5450 1700 50  0001 C CNN
-F 3 "" H 5450 1700 50  0001 C CNN
-	1    5450 1700
+P 5450 1450
+F 0 "#PWR0165" H 5450 1200 50  0001 C CNN
+F 1 "GND" H 5455 1277 50  0000 C CNN
+F 2 "" H 5450 1450 50  0001 C CNN
+F 3 "" H 5450 1450 50  0001 C CNN
+	1    5450 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 2500 5450 2400
+	5000 2400 5000 2300
 Wire Wire Line
-	5450 2400 5600 2400
+	5000 2300 5600 2300
 $Comp
 L power:GND #PWR0167
 U 1 1 5CE5324A
-P 5450 2500
-F 0 "#PWR0167" H 5450 2250 50  0001 C CNN
-F 1 "GND" H 5455 2327 50  0000 C CNN
-F 2 "" H 5450 2500 50  0001 C CNN
-F 3 "" H 5450 2500 50  0001 C CNN
-	1    5450 2500
+P 5000 2400
+F 0 "#PWR0167" H 5000 2150 50  0001 C CNN
+F 1 "GND" H 5005 2227 50  0000 C CNN
+F 2 "" H 5000 2400 50  0001 C CNN
+F 3 "" H 5000 2400 50  0001 C CNN
+	1    5000 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 3200 5600 3200
+	5450 3100 5600 3100
 Wire Wire Line
-	5450 3250 5450 3200
+	5450 3150 5450 3100
 Connection ~ 5600 1600
 Wire Wire Line
-	5600 1300 5600 1500
+	5600 1300 5600 1350
 Wire Wire Line
 	5600 1500 5600 1600
 Connection ~ 5600 1500
@@ -410,28 +396,13 @@ Wire Wire Line
 Wire Wire Line
 	5600 1600 5600 1700
 Wire Wire Line
-	5600 1700 5600 1800
-Connection ~ 5600 1700
-Wire Wire Line
 	6400 1700 5600 1700
-Wire Wire Line
-	6400 1800 5600 1800
-Connection ~ 5600 2400
 Wire Wire Line
 	5600 2300 5600 2400
 Wire Wire Line
 	6400 2300 5600 2300
 Wire Wire Line
 	6400 2400 5600 2400
-Wire Wire Line
-	5600 2400 5600 2500
-Wire Wire Line
-	5600 2500 5600 2600
-Connection ~ 5600 2500
-Wire Wire Line
-	6400 2500 5600 2500
-Wire Wire Line
-	6400 2600 5600 2600
 Connection ~ 5600 3200
 Wire Wire Line
 	5600 3100 5600 3200
@@ -442,12 +413,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 3200 5600 3300
 Wire Wire Line
-	5600 3300 5600 3400
-Connection ~ 5600 3300
-Wire Wire Line
 	6400 3300 5600 3300
-Wire Wire Line
-	6400 3400 5600 3400
 $Comp
 L IC_WUT:TFP410PAP U23
 U 1 1 5CE3DF48
@@ -462,12 +428,12 @@ $EndComp
 $Comp
 L power:GND #PWR0169
 U 1 1 5CE35990
-P 5450 3250
-F 0 "#PWR0169" H 5450 3000 50  0001 C CNN
-F 1 "GND" H 5455 3077 50  0000 C CNN
-F 2 "" H 5450 3250 50  0001 C CNN
-F 3 "" H 5450 3250 50  0001 C CNN
-	1    5450 3250
+P 5450 3150
+F 0 "#PWR0169" H 5450 2900 50  0001 C CNN
+F 1 "GND" H 5455 2977 50  0000 C CNN
+F 2 "" H 5450 3150 50  0001 C CNN
+F 3 "" H 5450 3150 50  0001 C CNN
+	1    5450 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -589,29 +555,29 @@ Text Label 9550 2550 0    50   ~ 0
 TX2+
 NoConn ~ 9950 3650
 NoConn ~ 9950 3750
-Text Label 5150 1900 0    50   ~ 0
+Text Label 5150 1800 0    50   ~ 0
 B0
-Text Label 5150 2000 0    50   ~ 0
+Text Label 5150 1900 0    50   ~ 0
 B1
-Text Label 5150 2100 0    50   ~ 0
+Text Label 5150 2000 0    50   ~ 0
 B2
-Text Label 5150 2200 0    50   ~ 0
+Text Label 5150 2100 0    50   ~ 0
 B3
-Text Label 5150 2700 0    50   ~ 0
+Text Label 5150 2500 0    50   ~ 0
 G0
-Text Label 5150 2800 0    50   ~ 0
+Text Label 5150 2600 0    50   ~ 0
 G1
-Text Label 5150 2900 0    50   ~ 0
+Text Label 5150 2700 0    50   ~ 0
 G2
-Text Label 5150 3000 0    50   ~ 0
+Text Label 5150 2800 0    50   ~ 0
 G3
-Text Label 5150 3500 0    50   ~ 0
+Text Label 5150 3400 0    50   ~ 0
 R0
-Text Label 5150 3600 0    50   ~ 0
+Text Label 5150 3500 0    50   ~ 0
 R1
-Text Label 5150 3700 0    50   ~ 0
+Text Label 5150 3600 0    50   ~ 0
 R2
-Text Label 5150 3800 0    50   ~ 0
+Text Label 5150 3700 0    50   ~ 0
 R3
 Text Label 5150 4000 0    50   ~ 0
 Active
@@ -622,38 +588,24 @@ VSync
 NoConn ~ 6400 4400
 NoConn ~ 6400 4500
 NoConn ~ 6400 4600
-Text Label 2850 1350 2    50   ~ 0
-B3
-Text Label 2850 1450 2    50   ~ 0
-B2
-Text Label 2850 1550 2    50   ~ 0
-Clk
-Text Label 2850 1650 2    50   ~ 0
-B1
-Text Label 2850 1750 2    50   ~ 0
-B0
-Text Label 2850 1850 2    50   ~ 0
-Active
-Text Label 2850 1950 2    50   ~ 0
-HSync
-Text Label 2850 2050 2    50   ~ 0
-VSync
-Text Label 2850 2450 2    50   ~ 0
-R3
-Text Label 2850 2550 2    50   ~ 0
-R2
-Text Label 2850 2650 2    50   ~ 0
-R1
-Text Label 2850 2750 2    50   ~ 0
-R0
 Text Label 2850 2850 2    50   ~ 0
-G3
-Text Label 2850 2950 2    50   ~ 0
-G2
+B3
 Text Label 2850 3050 2    50   ~ 0
-G1
+B2
+Text Label 2850 2950 2    50   ~ 0
+Clk
 Text Label 2850 3150 2    50   ~ 0
-G0
+B1
+Text Label 2850 3800 2    50   ~ 0
+VSync
+Text Label 2850 1450 2    50   ~ 0
+R3
+Text Label 2850 1550 2    50   ~ 0
+R2
+Text Label 2850 1650 2    50   ~ 0
+R1
+Text Label 2850 1750 2    50   ~ 0
+R0
 Text Label 7100 900  2    50   ~ 0
 DVDD
 Text Label 7350 900  2    50   ~ 0
@@ -668,69 +620,69 @@ Text Notes 10850 1550 2    50   ~ 0
 If we are abusing the standard\nenough that we're not reading\nthe EDID, I guess we don't have\nto supply 5V to it?
 Text Label 5150 1200 0    50   ~ 0
 Clk
-Text GLabel 1650 1350 0    50   Input ~ 0
+Text GLabel 1650 2850 0    50   Input ~ 0
 HDMI_B3
-Text GLabel 1650 1450 0    50   Input ~ 0
+Text GLabel 1650 3050 0    50   Input ~ 0
 HDMI_B2
-Text GLabel 1650 1550 0    50   Input ~ 0
-HDMI_CLK
-Text GLabel 1650 1650 0    50   Input ~ 0
+Text GLabel 1650 2950 0    50   Input ~ 0
+HDMI_Clk
+Text GLabel 1650 3150 0    50   Input ~ 0
 HDMI_B1
-Text GLabel 1650 1750 0    50   Input ~ 0
+Text GLabel 1650 3500 0    50   Input ~ 0
 HDMI_B0
-Text GLabel 1650 1850 0    50   Input ~ 0
+Text GLabel 1650 3600 0    50   Input ~ 0
 HDMI_Active
-Text GLabel 1650 1950 0    50   Input ~ 0
+Text GLabel 1650 3700 0    50   Input ~ 0
 HDMI_HSync
-Text GLabel 1650 2050 0    50   Input ~ 0
+Text GLabel 1650 3800 0    50   Input ~ 0
 HDMI_VSync
 Wire Wire Line
-	1650 1350 1950 1350
+	1650 2750 1950 2750
 Wire Wire Line
-	1650 1450 1950 1450
+	1650 2850 1950 2850
 Wire Wire Line
-	1650 1550 1950 1550
-Wire Wire Line
-	1650 1650 1950 1650
-Wire Wire Line
-	1650 1750 1950 1750
-Wire Wire Line
-	1650 1850 1950 1850
-Wire Wire Line
-	1650 1950 1950 1950
-Wire Wire Line
-	1650 2050 1950 2050
-Wire Wire Line
-	1950 2450 1650 2450
-Wire Wire Line
-	1950 2550 1650 2550
-Wire Wire Line
-	1650 2650 1950 2650
-Wire Wire Line
-	1950 2750 1650 2750
-Wire Wire Line
-	1950 2850 1650 2850
+	1650 3050 1950 3050
 Wire Wire Line
 	1650 2950 1950 2950
 Wire Wire Line
-	1950 3050 1650 3050
+	1650 3150 1950 3150
 Wire Wire Line
-	1950 3150 1650 3150
-Text GLabel 1650 2450 0    50   Input ~ 0
+	1650 3500 1950 3500
+Wire Wire Line
+	1650 3600 1950 3600
+Wire Wire Line
+	1650 3700 1950 3700
+Wire Wire Line
+	1950 3800 1650 3800
+Wire Wire Line
+	1950 1350 1650 1350
+Wire Wire Line
+	1650 1450 1950 1450
+Wire Wire Line
+	1950 1550 1650 1550
+Wire Wire Line
+	1950 1650 1650 1650
+Wire Wire Line
+	1650 1750 1950 1750
+Wire Wire Line
+	1950 1850 1650 1850
+Wire Wire Line
+	1950 1950 1650 1950
+Text GLabel 1650 1450 0    50   Input ~ 0
 HDMI_R3
-Text GLabel 1650 2550 0    50   Input ~ 0
+Text GLabel 1650 1550 0    50   Input ~ 0
 HDMI_R2
-Text GLabel 1650 2650 0    50   Input ~ 0
+Text GLabel 1650 1650 0    50   Input ~ 0
 HDMI_R1
-Text GLabel 1650 2750 0    50   Input ~ 0
+Text GLabel 1650 1750 0    50   Input ~ 0
 HDMI_R0
-Text GLabel 1650 2850 0    50   Input ~ 0
+Text GLabel 1650 2050 0    50   Input ~ 0
 HDMI_G3
-Text GLabel 1650 2950 0    50   Input ~ 0
+Text GLabel 1650 2450 0    50   Input ~ 0
 HDMI_G2
-Text GLabel 1650 3050 0    50   Input ~ 0
+Text GLabel 1650 2550 0    50   Input ~ 0
 HDMI_G1
-Text GLabel 1650 3150 0    50   Input ~ 0
+Text GLabel 1650 2650 0    50   Input ~ 0
 HDMI_G0
 Wire Wire Line
 	3500 2400 3650 2400
@@ -1059,4 +1011,104 @@ Wire Wire Line
 Connection ~ 4900 5500
 Wire Wire Line
 	4900 5500 4900 5550
+Connection ~ 5600 1350
+Wire Wire Line
+	5600 1350 5600 1500
+Wire Wire Line
+	6400 1800 5150 1800
+Text Label 5150 2200 0    50   ~ 0
+B4
+Connection ~ 5600 2300
+Wire Wire Line
+	6400 2600 5150 2600
+Wire Wire Line
+	6400 2500 5150 2500
+Text Label 5150 2900 0    50   ~ 0
+G4
+Text Label 5150 3000 0    50   ~ 0
+G5
+Connection ~ 5600 3100
+Wire Wire Line
+	6400 3400 5150 3400
+Text Label 5150 3800 0    50   ~ 0
+R4
+Text Label 2850 2750 2    50   ~ 0
+B4
+Text GLabel 1650 2750 0    50   Input ~ 0
+HDMI_B4
+Text GLabel 1650 1350 0    50   Input ~ 0
+HDMI_R4
+Text GLabel 1650 1850 0    50   Input ~ 0
+HDMI_G5
+Text GLabel 1650 1950 0    50   Input ~ 0
+HDMI_G4
+Text Label 2850 2650 2    50   ~ 0
+G0
+Text Label 2850 2550 2    50   ~ 0
+G1
+Text Label 2850 2450 2    50   ~ 0
+G2
+Text Label 2850 2050 2    50   ~ 0
+G3
+Text Label 2850 1350 2    50   ~ 0
+R4
+Wire Wire Line
+	2350 3800 2850 3800
+Wire Wire Line
+	2350 1350 2850 1350
+Wire Wire Line
+	2350 1450 2850 1450
+Wire Wire Line
+	2350 1550 2850 1550
+Wire Wire Line
+	2350 1650 2850 1650
+Wire Wire Line
+	2350 1750 2850 1750
+Wire Wire Line
+	2350 1850 2850 1850
+Wire Wire Line
+	2350 1950 2850 1950
+Text Label 2850 1850 2    50   ~ 0
+G5
+Text Label 2850 1950 2    50   ~ 0
+G4
+$Comp
+L Device:R_Pack08 RN10
+U 1 1 5DF499DF
+P 2150 3900
+F 0 "RN10" V 1533 3900 50  0000 C CNN
+F 1 "33" V 1624 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_8x0602" V 2625 3900 50  0001 C CNN
+F 3 "~" H 2150 3900 50  0001 C CNN
+	1    2150 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 2050 1950 2050
+Wire Wire Line
+	1650 2450 1950 2450
+Wire Wire Line
+	1650 2550 1950 2550
+Wire Wire Line
+	1650 2650 1950 2650
+NoConn ~ 1950 3900
+NoConn ~ 1950 4000
+NoConn ~ 1950 4100
+NoConn ~ 1950 4200
+NoConn ~ 2350 4200
+NoConn ~ 2350 4100
+NoConn ~ 2350 4000
+NoConn ~ 2350 3900
+Text Label 2850 3700 2    50   ~ 0
+HSync
+Text Label 2850 3600 2    50   ~ 0
+Active
+Text Label 2850 3500 2    50   ~ 0
+B0
+Wire Wire Line
+	2350 3500 2850 3500
+Wire Wire Line
+	2350 3600 2850 3600
+Wire Wire Line
+	2350 3700 2850 3700
 $EndSCHEMATC
