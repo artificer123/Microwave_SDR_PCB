@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 26 27
+Sheet 27 28
 Title ""
 Date ""
 Rev ""
@@ -15,14 +15,25 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Analog_DAC:AD5689BCPZ U29
-U 1 1 5DD6D8D6
-P 5500 3350
-F 0 "U29" H 5500 2661 50  0000 C CNN
-F 1 "AD5689BCPZ" H 5500 2570 50  0000 C CNN
-F 2 "Package_CSP:LFCSP-16-1EP_3x3mm_P0.5mm_EP1.854x1.854mm" H 5500 3350 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD5689_5687.pdf" H 5500 3350 50  0001 C CNN
-	1    5500 3350
-	1    0    0    -1  
+L Connector:AudioJack3_SwitchTR J18
+U 1 1 5DD7546E
+P 8500 3050
+F 0 "J18" H 8220 2883 50  0000 R CNN
+F 1 "SJ1-3535NG-BE" H 8220 2974 50  0000 R CNN
+F 2 "Connector_WUT:Jack_3.5mm_CUI_SJ1-3535NG-BE_Horizontal_CircularHoles_Blue" H 8500 3050 50  0001 C CNN
+F 3 "~" H 8500 3050 50  0001 C CNN
+	1    8500 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack3_SwitchTR J20
+U 1 1 5DD76C2C
+P 8500 3800
+F 0 "J20" H 8220 3633 50  0000 R CNN
+F 1 "SJ1-3535NG-GR" H 8220 3724 50  0000 R CNN
+F 2 "Connector_WUT:Jack_3.5mm_CUI_SJ1-3535NG-GR_Horizontal_CircularHoles_Green" H 8500 3800 50  0001 C CNN
+F 3 "~" H 8500 3800 50  0001 C CNN
+	1    8500 3800
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

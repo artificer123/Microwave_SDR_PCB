@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 27
+Sheet 14 28
 Title ""
 Date ""
 Rev ""
@@ -37,5 +37,11 @@ S 2000 5300 1650 1150
 U 5D96C261
 F0 "Connectors" 50
 F1 "misc_connectors.sch" 50
+$EndSheet
+$Sheet
+S 4850 5300 2050 1150
+U 5DD6277A
+F0 "PMOD Connectors" 50
+F1 "pmod.sch" 50
 $EndSheet
 $EndSCHEMATC

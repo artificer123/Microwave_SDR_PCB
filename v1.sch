@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 27
+Sheet 1 28
 Title ""
 Date ""
 Rev "DRAFT"
@@ -223,7 +223,7 @@ $EndComp
 $Sheet
 S 8000 3400 2100 1500
 U 5DD6D4F3
-F0 "AF DAC" 50
+F0 "AF ADC/DAC" 50
 F1 "af_dac.sch" 50
 $EndSheet
 $Sheet
