@@ -36,4 +36,15 @@ F 3 "~" H 8500 3800 50  0001 C CNN
 	1    8500 3800
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector:AudioJack3_SwitchTR J21
+U 1 1 5DDA37F0
+P 8500 4600
+F 0 "J21" H 8220 4433 50  0000 R CNN
+F 1 "SJ1-3535NG-GR" H 8220 4524 50  0000 R CNN
+F 2 "Connector_WUT:Jack_3.5mm_CUI_SJ1-3535NG-GR_Horizontal_CircularHoles_Green" H 8500 4600 50  0001 C CNN
+F 3 "~" H 8500 4600 50  0001 C CNN
+	1    8500 4600
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
