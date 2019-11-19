@@ -2098,4 +2098,28 @@ Text Label 9050 5750 0    50   ~ 0
 ADC_Dither
 Text GLabel 10000 5750 2    50   Output ~ 0
 RF_ADC_Dither
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DF38AA7
+P 2450 6400
+F 0 "#FLG?" H 2450 6475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 6573 50  0001 C CNN
+F 2 "" H 2450 6400 50  0001 C CNN
+F 3 "~" H 2450 6400 50  0001 C CNN
+	1    2450 6400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 6400
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DF3A577
+P 5300 800
+F 0 "#FLG?" H 5300 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5300 973 50  0001 C CNN
+F 2 "" H 5300 800 50  0001 C CNN
+F 3 "~" H 5300 800 50  0001 C CNN
+	1    5300 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 5300 800 
 $EndSCHEMATC

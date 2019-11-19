@@ -749,7 +749,6 @@ Wire Wire Line
 	7950 2200 7950 2150
 Wire Wire Line
 	7950 1850 7950 1700
-Connection ~ 7950 1700
 $Comp
 L IC_WUT:MAX9612 U?
 U 1 1 5DCE23FF
@@ -839,21 +838,6 @@ Wire Wire Line
 Connection ~ 6000 2550
 Wire Wire Line
 	3250 2300 3850 2300
-$Comp
-L power:+1V8 #PWR052
-U 1 1 5DD74EB0
-P 8100 1650
-F 0 "#PWR052" H 8100 1500 50  0001 C CNN
-F 1 "+1V8" H 8115 1823 50  0000 C CNN
-F 2 "" H 8100 1650 50  0001 C CNN
-F 3 "" H 8100 1650 50  0001 C CNN
-	1    8100 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 1700 8100 1650
-Wire Wire Line
-	7950 1700 8100 1700
 Wire Wire Line
 	7650 1600 7650 1700
 Connection ~ 7650 1700
@@ -1062,4 +1046,9 @@ F 3 "" H 6400 5650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6400 5650 6400 5600
+Text HLabel 8150 1700 2    50   Output ~ 0
+1V8
+Wire Wire Line
+	8150 1700 7950 1700
+Connection ~ 7950 1700
 $EndSCHEMATC
