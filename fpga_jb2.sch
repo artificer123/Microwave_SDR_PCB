@@ -288,14 +288,6 @@ Text GLabel 2850 6350 0    50   Output ~ 0
 RF_DAC_D6
 NoConn ~ 3350 7550
 NoConn ~ 4850 7950
-Wire Wire Line
-	3850 9150 3500 9150
-Wire Wire Line
-	3850 9050 3500 9050
-Text GLabel 3500 9150 0    50   Output ~ 0
-~VDMA_Lock
-Text GLabel 3500 9050 0    50   Output ~ 0
-~VDMA_Underflow
 $Comp
 L power:+3.3V #PWR0128
 U 1 1 5DD96845
