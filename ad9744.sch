@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 28 28
+Sheet 28 32
 Title ""
 Date ""
 Rev ""
@@ -676,7 +676,7 @@ RF_DAC_CLK_P
 Wire Wire Line
 	5050 4300 4700 4300
 Text Label 4700 4300 0    50   ~ 0
-AVDD
+RF_AVDD
 $Comp
 L Device:R R147
 U 1 1 5DE82188
@@ -987,7 +987,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 1000 5550 2500
 Text Label 6100 1900 0    50   ~ 0
-AVDD
+RF_AVDD
 Wire Wire Line
 	5550 1000 7050 1000
 $EndSCHEMATC
