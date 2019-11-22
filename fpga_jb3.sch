@@ -73,4 +73,68 @@ NoConn ~ 5000 2350
 NoConn ~ 5000 2450
 NoConn ~ 6500 2450
 NoConn ~ 6500 2350
+Wire Wire Line
+	6500 5250 7000 5250
+Text GLabel 7000 5250 2    50   UnSpc ~ 0
+PMOD_A10
+Wire Wire Line
+	6500 5150 7000 5150
+Text GLabel 7000 5150 2    50   UnSpc ~ 0
+PMOD_A4
+Wire Wire Line
+	6500 4950 7000 4950
+Text GLabel 7000 4950 2    50   UnSpc ~ 0
+PMOD_A9
+Wire Wire Line
+	6500 4850 7000 4850
+Text GLabel 7000 4850 2    50   UnSpc ~ 0
+PMOD_A3
+Wire Wire Line
+	6500 4750 7000 4750
+Text GLabel 7000 4750 2    50   UnSpc ~ 0
+PMOD_A8
+Wire Wire Line
+	6500 4650 7000 4650
+Text GLabel 7000 4650 2    50   UnSpc ~ 0
+PMOD_A2
+Wire Wire Line
+	6500 4450 7000 4450
+Text GLabel 7000 4450 2    50   UnSpc ~ 0
+PMOD_A7
+Wire Wire Line
+	6500 4350 7000 4350
+Text GLabel 7000 4350 2    50   UnSpc ~ 0
+PMOD_A1
+Wire Wire Line
+	6500 3650 7000 3650
+Text GLabel 7000 3650 2    50   UnSpc ~ 0
+PMOD_B10
+Wire Wire Line
+	6500 3550 7000 3550
+Text GLabel 7000 3550 2    50   UnSpc ~ 0
+PMOD_B4
+Wire Wire Line
+	6500 3350 7000 3350
+Text GLabel 7000 3350 2    50   UnSpc ~ 0
+PMOD_B9
+Wire Wire Line
+	6500 3250 7000 3250
+Text GLabel 7000 3250 2    50   UnSpc ~ 0
+PMOD_B3
+Wire Wire Line
+	6500 3050 7000 3050
+Text GLabel 7000 3050 2    50   UnSpc ~ 0
+PMOD_B8
+Wire Wire Line
+	6500 2950 7000 2950
+Text GLabel 7000 2950 2    50   UnSpc ~ 0
+PMOD_B2
+Wire Wire Line
+	6500 2750 7000 2750
+Text GLabel 7000 2750 2    50   UnSpc ~ 0
+PMOD_B7
+Wire Wire Line
+	6500 2650 7000 2650
+Text GLabel 7000 2650 2    50   UnSpc ~ 0
+PMOD_B1
 $EndSCHEMATC

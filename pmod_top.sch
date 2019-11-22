@@ -62,4 +62,68 @@ F7 "9" U L 5800 6450 50
 F8 "4" U L 5800 6000 50 
 F9 "10" U L 5800 6550 50 
 $EndSheet
+Wire Wire Line
+	5800 2150 5300 2150
+Text GLabel 5300 2150 0    50   UnSpc ~ 0
+PMOD_A10
+Wire Wire Line
+	5800 1550 5300 1550
+Text GLabel 5300 1550 0    50   UnSpc ~ 0
+PMOD_A4
+Wire Wire Line
+	5800 2050 5300 2050
+Text GLabel 5300 2050 0    50   UnSpc ~ 0
+PMOD_A9
+Wire Wire Line
+	5800 1450 5300 1450
+Text GLabel 5300 1450 0    50   UnSpc ~ 0
+PMOD_A3
+Wire Wire Line
+	5800 1950 5300 1950
+Text GLabel 5300 1950 0    50   UnSpc ~ 0
+PMOD_A8
+Text GLabel 5300 1850 0    50   UnSpc ~ 0
+PMOD_A7
+Wire Wire Line
+	5800 1250 5300 1250
+Text GLabel 5300 1250 0    50   UnSpc ~ 0
+PMOD_A1
+Wire Wire Line
+	5800 1850 5300 1850
+Text GLabel 5300 1350 0    50   UnSpc ~ 0
+PMOD_A2
+Wire Wire Line
+	5800 1350 5300 1350
+Wire Wire Line
+	5800 3600 5300 3600
+Text GLabel 5300 3600 0    50   UnSpc ~ 0
+PMOD_B10
+Wire Wire Line
+	5800 3050 5300 3050
+Text GLabel 5300 3050 0    50   UnSpc ~ 0
+PMOD_B4
+Wire Wire Line
+	5800 3500 5300 3500
+Text GLabel 5300 3500 0    50   UnSpc ~ 0
+PMOD_B9
+Wire Wire Line
+	5800 2950 5300 2950
+Text GLabel 5300 2950 0    50   UnSpc ~ 0
+PMOD_B3
+Wire Wire Line
+	5800 3400 5300 3400
+Text GLabel 5300 3400 0    50   UnSpc ~ 0
+PMOD_B8
+Text GLabel 5300 3300 0    50   UnSpc ~ 0
+PMOD_B7
+Wire Wire Line
+	5800 2750 5300 2750
+Text GLabel 5300 2750 0    50   UnSpc ~ 0
+PMOD_B1
+Wire Wire Line
+	5800 3300 5300 3300
+Text GLabel 5300 2850 0    50   UnSpc ~ 0
+PMOD_B2
+Wire Wire Line
+	5800 2850 5300 2850
 $EndSCHEMATC
