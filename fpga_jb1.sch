@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:v1-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
 encoding utf-8
@@ -618,4 +618,8 @@ F 3 "" H 2100 2450 50  0001 C CNN
 	1    2100 2450
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3350 6650
+NoConn ~ 3350 6850
+NoConn ~ 3350 6950
+NoConn ~ 3350 7050
 $EndSCHEMATC

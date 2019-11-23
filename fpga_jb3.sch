@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:v1-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -106,35 +106,107 @@ Wire Wire Line
 Text GLabel 7000 4350 2    50   UnSpc ~ 0
 PMOD_A1
 Wire Wire Line
+	5000 4450 4500 4450
+Text GLabel 4500 4450 0    50   UnSpc ~ 0
+PMOD_B10
+Wire Wire Line
+	5000 4350 4500 4350
+Text GLabel 4500 4350 0    50   UnSpc ~ 0
+PMOD_B4
+Wire Wire Line
+	6500 4250 7000 4250
+Text GLabel 7000 4250 2    50   UnSpc ~ 0
+PMOD_B9
+Wire Wire Line
+	6500 4150 7000 4150
+Text GLabel 7000 4150 2    50   UnSpc ~ 0
+PMOD_B3
+Wire Wire Line
+	5000 4250 4500 4250
+Text GLabel 4500 4250 0    50   UnSpc ~ 0
+PMOD_B8
+Wire Wire Line
+	5000 4150 4500 4150
+Text GLabel 4500 4150 0    50   UnSpc ~ 0
+PMOD_B2
+Wire Wire Line
+	5000 3950 4500 3950
+Text GLabel 4500 3950 0    50   UnSpc ~ 0
+PMOD_B7
+Wire Wire Line
+	5000 3850 4500 3850
+Text GLabel 4500 3850 0    50   UnSpc ~ 0
+PMOD_B1
+Wire Wire Line
+	5000 3650 4500 3650
+Text GLabel 4500 3650 0    50   UnSpc ~ 0
+PMOD_C10
+Wire Wire Line
+	5000 3550 4500 3550
+Text GLabel 4500 3550 0    50   UnSpc ~ 0
+PMOD_C4
+Wire Wire Line
+	5000 3350 4500 3350
+Text GLabel 4500 3350 0    50   UnSpc ~ 0
+PMOD_C9
+Wire Wire Line
+	5000 3250 4500 3250
+Text GLabel 4500 3250 0    50   UnSpc ~ 0
+PMOD_C3
+Wire Wire Line
+	5000 3050 4500 3050
+Text GLabel 4500 3050 0    50   UnSpc ~ 0
+PMOD_C8
+Wire Wire Line
+	5000 2950 4500 2950
+Text GLabel 4500 2950 0    50   UnSpc ~ 0
+PMOD_C2
+Wire Wire Line
+	5000 2750 4500 2750
+Wire Wire Line
+	5000 2650 4500 2650
+Text GLabel 4500 2650 0    50   UnSpc ~ 0
+PMOD_C1
+Text GLabel 4500 2750 0    50   UnSpc ~ 0
+PMOD_C7
+Wire Wire Line
+	6500 3950 7000 3950
+Text GLabel 7000 3950 2    50   UnSpc ~ 0
+PMOD_D10
+Wire Wire Line
+	6500 3850 7000 3850
+Text GLabel 7000 3850 2    50   UnSpc ~ 0
+PMOD_D4
+Wire Wire Line
 	6500 3650 7000 3650
 Text GLabel 7000 3650 2    50   UnSpc ~ 0
-PMOD_B10
+PMOD_D9
 Wire Wire Line
 	6500 3550 7000 3550
 Text GLabel 7000 3550 2    50   UnSpc ~ 0
-PMOD_B4
+PMOD_D3
 Wire Wire Line
 	6500 3350 7000 3350
 Text GLabel 7000 3350 2    50   UnSpc ~ 0
-PMOD_B9
+PMOD_D8
 Wire Wire Line
 	6500 3250 7000 3250
 Text GLabel 7000 3250 2    50   UnSpc ~ 0
-PMOD_B3
+PMOD_D2
 Wire Wire Line
 	6500 3050 7000 3050
-Text GLabel 7000 3050 2    50   UnSpc ~ 0
-PMOD_B8
 Wire Wire Line
 	6500 2950 7000 2950
 Text GLabel 7000 2950 2    50   UnSpc ~ 0
-PMOD_B2
-Wire Wire Line
-	6500 2750 7000 2750
-Text GLabel 7000 2750 2    50   UnSpc ~ 0
-PMOD_B7
+PMOD_D1
+Text GLabel 7000 3050 2    50   UnSpc ~ 0
+PMOD_D7
 Wire Wire Line
 	6500 2650 7000 2650
-Text GLabel 7000 2650 2    50   UnSpc ~ 0
-PMOD_B1
+Text GLabel 7000 2750 2    50   Input ~ 0
+ENC3_B
+Text GLabel 7000 2650 2    50   Input ~ 0
+ENC3_A
+Wire Wire Line
+	7000 2750 6500 2750
 $EndSCHEMATC
