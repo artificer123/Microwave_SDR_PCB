@@ -1072,17 +1072,6 @@ Text Label 2850 1850 2    50   ~ 0
 G5
 Text Label 2850 1950 2    50   ~ 0
 G4
-$Comp
-L Device:R_Pack08 RN10
-U 1 1 5DF499DF
-P 2150 3900
-F 0 "RN10" V 1533 3900 50  0000 C CNN
-F 1 "33" V 1624 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_8x0602" V 2625 3900 50  0001 C CNN
-F 3 "~" H 2150 3900 50  0001 C CNN
-	1    2150 3900
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1650 2050 1950 2050
 Wire Wire Line
@@ -1092,12 +1081,8 @@ Wire Wire Line
 Wire Wire Line
 	1650 2650 1950 2650
 NoConn ~ 1950 3900
-NoConn ~ 1950 4000
-NoConn ~ 1950 4100
 NoConn ~ 1950 4200
 NoConn ~ 2350 4200
-NoConn ~ 2350 4100
-NoConn ~ 2350 4000
 NoConn ~ 2350 3900
 Text Label 2850 3700 2    50   ~ 0
 HSync
@@ -1111,4 +1096,31 @@ Wire Wire Line
 	2350 3600 2850 3600
 Wire Wire Line
 	2350 3700 2850 3700
+$Comp
+L Device:R_Pack08 RN10
+U 1 1 5DF499DF
+P 2150 3900
+F 0 "RN10" V 1533 3900 50  0000 C CNN
+F 1 "33" V 1624 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_8x0602" V 2625 3900 50  0001 C CNN
+F 3 "~" H 2150 3900 50  0001 C CNN
+	1    2150 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 4000 2850 4000
+Wire Wire Line
+	2350 4100 2850 4100
+Text GLabel 2850 4100 2    50   Output ~ 0
+UART_PMIC_FROM_FPGA
+Text GLabel 2850 4000 2    50   Input ~ 0
+UART_PMIC_TO_FPGA
+Wire Wire Line
+	1950 4000 1650 4000
+Wire Wire Line
+	1950 4100 1650 4100
+Text GLabel 1650 4000 0    50   Output ~ 0
+JB1.34
+Text GLabel 1650 4100 0    50   Input ~ 0
+JB1.32
 $EndSCHEMATC

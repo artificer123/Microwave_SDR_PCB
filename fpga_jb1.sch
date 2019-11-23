@@ -217,28 +217,12 @@ Wire Wire Line
 	5400 9650 5400 9600
 Wire Wire Line
 	5300 9700 5300 9650
-$Comp
-L LED_WUT:LED_Cree_CLX6E-FKC LD11
-U 2 1 5D9B5485
-P 5800 9450
-F 0 "LD11" V 5793 9332 50  0000 R CNN
-F 1 "LED_Cree_CLX6E-FKC" H 5800 9800 50  0001 C CNN
-F 2 "LED_SMD:LED_RGB_PLCC-6" H 5800 9450 50  0001 C CNN
-F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 5800 9450 200 0001 C CNN
-	2    5800 9450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5800 9300 5800 9000
-Connection ~ 5800 9000
 Text Notes 2450 9100 0    50   ~ 0
 Boot Device. Low = SD card, High = QSPI
 Text Notes 2450 8900 0    50   ~ 0
 Active high module enable
 Text Notes 2450 9000 0    50   ~ 0
 Open drain, deasserted when regulators are stable
-Wire Wire Line
-	5800 9000 6000 9000
 Text Label 2750 2450 0    50   ~ 0
 NOSEQ
 Text Label 2050 8800 0    50   ~ 0
@@ -265,16 +249,9 @@ Wire Wire Line
 	5100 9650 5300 9650
 Wire Wire Line
 	4800 9300 4800 8800
-Wire Wire Line
-	5400 9650 5800 9650
-Wire Wire Line
-	5800 9650 5800 9600
-Connection ~ 5400 9650
 Connection ~ 5300 9650
 Wire Wire Line
 	5300 9650 5400 9650
-Wire Wire Line
-	5300 9000 5800 9000
 Wire Wire Line
 	4800 8800 5100 8800
 Wire Wire Line
@@ -362,51 +339,6 @@ Text Notes 2450 9200 0    50   ~ 0
 JTAG Device Select. High = CPLD, Low = FPGA
 Text Notes 2100 9400 0    50   ~ 0
 I don't know why the two aren't just connected in serial\nbut the module seems to demultiplex the JTAG lines?
-$Comp
-L LED_WUT:LED_Cree_CLX6E-FKC LD11
-U 1 1 5DA9912E
-P 6500 9450
-F 0 "LD11" V 6493 9333 50  0000 R CNN
-F 1 "LED_Cree_CLX6E-FKC" H 6500 9800 50  0001 C CNN
-F 2 "LED_SMD:LED_RGB_PLCC-6" H 6500 9450 50  0001 C CNN
-F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 6500 9450 200 0001 C CNN
-	1    6500 9450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED_WUT:LED_Cree_CLX6E-FKC LD11
-U 3 1 5DA9AD7D
-P 6000 8400
-F 0 "LD11" V 5993 8282 50  0000 R CNN
-F 1 "LED_Cree_CLX6E-FKC" H 6000 8750 50  0001 C CNN
-F 2 "LED_SMD:LED_RGB_PLCC-6" H 6000 8400 50  0001 C CNN
-F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 6000 8400 200 0001 C CNN
-	3    6000 8400
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 6500 9300
-NoConn ~ 6500 9600
-Wire Wire Line
-	5400 8250 6000 8250
-Connection ~ 5400 8250
-$Comp
-L Device:R R122
-U 1 1 5DAA7489
-P 6000 8800
-F 0 "R122" H 6070 8846 50  0000 L CNN
-F 1 "22k" H 6070 8755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 8800 50  0001 C CNN
-F 3 "~" H 6000 8800 50  0001 C CNN
-	1    6000 8800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 8650 6000 8550
-Wire Wire Line
-	6000 8950 6000 9000
-Connection ~ 6000 9000
-Wire Wire Line
-	6000 9000 6200 9000
 $Comp
 L Device:C C87
 U 1 1 5DABBF42
@@ -622,4 +554,16 @@ NoConn ~ 3350 6650
 NoConn ~ 3350 6850
 NoConn ~ 3350 6950
 NoConn ~ 3350 7050
+Wire Wire Line
+	3350 3850 2950 3850
+Wire Wire Line
+	3350 3950 2950 3950
+Text GLabel 2950 3850 0    50   Input ~ 0
+JB1.32
+Text GLabel 2950 3950 0    50   Output ~ 0
+JB1.34
+Text Notes 1600 4100 0    50   ~ 0
+These two are PMIC   ->\nUART but go through ->\nresistors on HDMI\npage
+Wire Wire Line
+	5300 9000 6200 9000
 $EndSCHEMATC

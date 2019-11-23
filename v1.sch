@@ -127,8 +127,6 @@ F 3 "" H 5750 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 7350 5750 7250
-Wire Wire Line
 	5750 5650 5850 5650
 Wire Wire Line
 	5850 5850 5750 5850
@@ -156,53 +154,19 @@ Connection ~ 5750 6650
 Wire Wire Line
 	5750 6650 5750 6450
 $Comp
-L Mechanical:MountingHole_Pad H7
-U 1 1 5DD333D3
-P 5950 6850
-F 0 "H7" V 5904 7000 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5995 7000 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5950 6850 50  0001 C CNN
-F 3 "~" H 5950 6850 50  0001 C CNN
-	1    5950 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H8
-U 1 1 5DD333D9
+L Mechanical:MountingHole_Pad H9
+U 1 1 5DD333DF
 P 5950 7050
-F 0 "H8" V 5904 7200 50  0000 L CNN
+F 0 "H9" V 5904 7200 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5995 7200 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5950 7050 50  0001 C CNN
 F 3 "~" H 5950 7050 50  0001 C CNN
 	1    5950 7050
 	0    1    1    0   
 $EndComp
-$Comp
-L Mechanical:MountingHole_Pad H9
-U 1 1 5DD333DF
-P 5950 7250
-F 0 "H9" V 5904 7400 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5995 7400 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5950 7250 50  0001 C CNN
-F 3 "~" H 5950 7250 50  0001 C CNN
-	1    5950 7250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5850 7250 5750 7250
-Connection ~ 5750 7250
-Wire Wire Line
-	5750 7250 5750 7050
 Wire Wire Line
 	5850 7050 5750 7050
 Connection ~ 5750 7050
-Wire Wire Line
-	5750 7050 5750 6850
-Wire Wire Line
-	5850 6850 5750 6850
-Connection ~ 5750 6850
-Wire Wire Line
-	5750 6850 5750 6650
 $Sheet
 S 7550 1100 2000 1250
 U 5DD04D63
@@ -232,4 +196,8 @@ U 5DD6E120
 F0 "RF DAC" 50
 F1 "ad9744.sch" 50
 $EndSheet
+Wire Wire Line
+	5750 7050 5750 7350
+Wire Wire Line
+	5750 6650 5750 7050
 $EndSCHEMATC

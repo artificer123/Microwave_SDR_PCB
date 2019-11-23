@@ -219,96 +219,6 @@ Wire Wire Line
 Wire Wire Line
 	8350 3700 6700 3700
 Wire Wire Line
-	9900 1950 9900 1900
-Wire Wire Line
-	9900 1900 10450 1900
-Connection ~ 9900 1900
-Wire Wire Line
-	9900 1850 9900 1900
-Wire Wire Line
-	10450 1900 10450 1850
-Wire Wire Line
-	9350 1900 9900 1900
-Wire Wire Line
-	9350 1850 9350 1900
-$Comp
-L power:GND #PWR079
-U 1 1 5DACF96D
-P 9900 1950
-F 0 "#PWR079" H 9900 1700 50  0001 C CNN
-F 1 "GND" H 9905 1777 50  0000 C CNN
-F 2 "" H 9900 1950 50  0001 C CNN
-F 3 "" H 9900 1950 50  0001 C CNN
-	1    9900 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R83
-U 1 1 5DACF975
-P 10450 1400
-F 0 "R83" H 10520 1446 50  0000 L CNN
-F 1 "22k" H 10520 1355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10380 1400 50  0001 C CNN
-F 3 "~" H 10450 1400 50  0001 C CNN
-	1    10450 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R82
-U 1 1 5DACF97B
-P 9900 1400
-F 0 "R82" H 9970 1446 50  0000 L CNN
-F 1 "33k" H 9970 1355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 1400 50  0001 C CNN
-F 3 "~" H 9900 1400 50  0001 C CNN
-	1    9900 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R81
-U 1 1 5DACF981
-P 9350 1400
-F 0 "R81" H 9420 1446 50  0000 L CNN
-F 1 "7k5" H 9420 1355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9280 1400 50  0001 C CNN
-F 3 "~" H 9350 1400 50  0001 C CNN
-	1    9350 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED_WUT:LED_Cree_CLX6E-FKC LD3
-U 2 1 5DACF987
-P 9900 1700
-F 0 "LD3" V 9893 1582 50  0000 R CNN
-F 1 "LED_Cree_CLX6E-FKC" H 9900 2050 50  0001 C CNN
-F 2 "LED_SMD:LED_RGB_PLCC-6" H 9900 1700 50  0001 C CNN
-F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 9900 1700 200 0001 C CNN
-	2    9900 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED_WUT:LED_Cree_CLX6E-FKC LD3
-U 3 1 5DACF98D
-P 10450 1700
-F 0 "LD3" V 10443 1582 50  0000 R CNN
-F 1 "LED_Cree_CLX6E-FKC" H 10450 2050 50  0001 C CNN
-F 2 "LED_SMD:LED_RGB_PLCC-6" H 10450 1700 50  0001 C CNN
-F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 10450 1700 200 0001 C CNN
-	3    10450 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED_WUT:LED_Cree_CLX6E-FKC LD3
-U 1 1 5DACF994
-P 9350 1700
-F 0 "LD3" V 9343 1583 50  0000 R CNN
-F 1 "LED_Cree_CLX6E-FKC" H 9350 2050 50  0001 C CNN
-F 2 "LED_SMD:LED_RGB_PLCC-6" H 9350 1700 50  0001 C CNN
-F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 9350 1700 200 0001 C CNN
-	1    9350 1700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	9350 2500 8800 2500
 Wire Wire Line
 	9900 2400 8800 2400
@@ -501,12 +411,6 @@ F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9350 1100 8800 1100
-Wire Wire Line
-	9900 1000 8800 1000
-Wire Wire Line
-	10450 900  8800 900 
-Wire Wire Line
 	7800 4750 7800 4700
 Wire Wire Line
 	7800 4700 8350 4700
@@ -622,12 +526,6 @@ Text Label 6700 2400 0    50   ~ 0
 5V_OK
 Text Label 6700 2500 0    50   ~ 0
 5V_VFault
-Text Label 8800 900  0    50   ~ 0
-1V8_IFault
-Text Label 8800 1000 0    50   ~ 0
-1V8_OK
-Text Label 8800 1100 0    50   ~ 0
-1V8_VFault
 Text Label 6700 900  0    50   ~ 0
 3V3ADC_IFault
 Text Label 6700 1000 0    50   ~ 0
@@ -763,10 +661,6 @@ Text GLabel 1350 4950 0    50   Input ~ 0
 3V3_V_Good
 Text GLabel 1350 4850 0    50   Input ~ 0
 3V3_I_Good
-Text GLabel 1450 5250 0    50   Input ~ 0
-1V8_I_Good
-Text GLabel 1450 5350 0    50   Input ~ 0
-1V8_V_Good
 Text GLabel 1450 5450 0    50   Input ~ 0
 3V3ADC_I_Good
 Text GLabel 1450 5550 0    50   Input ~ 0
@@ -789,17 +683,11 @@ Text Label 1000 2150 0    50   ~ 0
 5V_OK
 Text Label 1000 2050 0    50   ~ 0
 5V_VFault
-Text Label 2950 5750 0    50   ~ 0
-1V8_VFault
-Text Label 1000 1850 0    50   ~ 0
-1V8_OK
-Text Label 1000 1950 0    50   ~ 0
-1V8_IFault
-Text Label 2950 5450 0    50   ~ 0
+Text Label 3050 5750 0    50   ~ 0
 3V3ADC_VFault
-Text Label 2950 5550 0    50   ~ 0
+Text Label 1000 1850 0    50   ~ 0
 3V3ADC_OK
-Text Label 2950 5650 0    50   ~ 0
+Text Label 1000 1950 0    50   ~ 0
 3V3ADC_IFault
 Wire Wire Line
 	4550 2250 4300 2250
@@ -871,12 +759,6 @@ Wire Wire Line
 	7800 1000 7800 1250
 Wire Wire Line
 	7250 1100 7250 1250
-Wire Wire Line
-	10450 900  10450 1250
-Wire Wire Line
-	9900 1000 9900 1250
-Wire Wire Line
-	9350 1100 9350 1250
 Wire Wire Line
 	8350 2300 8350 2650
 Wire Wire Line
@@ -1186,7 +1068,7 @@ L Device:C C126
 U 1 1 5E2C4A8E
 P 4150 6050
 F 0 "C126" H 4265 6096 50  0000 L CNN
-F 1 "DNF" H 4265 6005 50  0000 L CNN
+F 1 "22p" H 4265 6005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4188 5900 50  0001 C CNN
 F 3 "~" H 4150 6050 50  0001 C CNN
 	1    4150 6050
@@ -1210,4 +1092,99 @@ F 3 "" H 4150 6300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 6300 4150 6200
+Text Notes 4500 6150 0    50   ~ 0
+Credit for this\ncap to M1GEO
+Wire Wire Line
+	9900 2000 9900 1950
+Wire Wire Line
+	9900 1950 10450 1950
+Connection ~ 9900 1950
+Wire Wire Line
+	9900 1900 9900 1950
+Wire Wire Line
+	10450 1950 10450 1900
+$Comp
+L power:GND #PWR0281
+U 1 1 5DE983E0
+P 9900 2000
+F 0 "#PWR0281" H 9900 1750 50  0001 C CNN
+F 1 "GND" H 9905 1827 50  0000 C CNN
+F 2 "" H 9900 2000 50  0001 C CNN
+F 3 "" H 9900 2000 50  0001 C CNN
+	1    9900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R62
+U 1 1 5DE983E6
+P 10450 1450
+F 0 "R62" H 10520 1496 50  0000 L CNN
+F 1 "22k" H 10520 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10380 1450 50  0001 C CNN
+F 3 "~" H 10450 1450 50  0001 C CNN
+	1    10450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R61
+U 1 1 5DE983EC
+P 9900 1450
+F 0 "R61" H 9970 1496 50  0000 L CNN
+F 1 "33k" H 9970 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 1450 50  0001 C CNN
+F 3 "~" H 9900 1450 50  0001 C CNN
+	1    9900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_WUT:LED_Cree_CLX6E-FKC LD3
+U 2 1 5DE983F8
+P 9900 1750
+F 0 "LD3" V 9893 1632 50  0000 R CNN
+F 1 "LED_Cree_CLX6E-FKC" H 9900 2100 50  0001 C CNN
+F 2 "LED_SMD:LED_RGB_PLCC-6" H 9900 1750 50  0001 C CNN
+F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 9900 1750 200 0001 C CNN
+	2    9900 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_WUT:LED_Cree_CLX6E-FKC LD3
+U 3 1 5DE983FE
+P 10450 1750
+F 0 "LD3" V 10443 1632 50  0000 R CNN
+F 1 "LED_Cree_CLX6E-FKC" H 10450 2100 50  0001 C CNN
+F 2 "LED_SMD:LED_RGB_PLCC-6" H 10450 1750 50  0001 C CNN
+F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 10450 1750 200 0001 C CNN
+	3    10450 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_WUT:LED_Cree_CLX6E-FKC LD3
+U 1 1 5DE98404
+P 9350 1750
+F 0 "LD3" V 9343 1633 50  0000 R CNN
+F 1 "LED_Cree_CLX6E-FKC" H 9350 2100 50  0001 C CNN
+F 2 "LED_SMD:LED_RGB_PLCC-6" H 9350 1750 50  0001 C CNN
+F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" H 9350 1750 200 0001 C CNN
+	1    9350 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 1050 8800 1050
+Wire Wire Line
+	10450 950  8800 950 
+Text Label 8800 950  0    50   ~ 0
+FPGA_Fault
+Text Label 8800 1050 0    50   ~ 0
+FPGA_OK
+Wire Wire Line
+	10450 950  10450 1300
+Wire Wire Line
+	9900 1050 9900 1300
+NoConn ~ 9350 1600
+NoConn ~ 9350 1900
+Text Label 3050 5650 0    50   ~ 0
+FPGA_Fault
+Text Label 3050 5550 0    50   ~ 0
+FPGA_OK
 $EndSCHEMATC

@@ -618,7 +618,7 @@ $EndComp
 Wire Wire Line
 	2200 2400 2200 2600
 Wire Wire Line
-	4250 3450 4250 1750
+	4150 3450 4150 1750
 Wire Wire Line
 	2200 1750 2200 2000
 $Comp
@@ -669,7 +669,7 @@ Wire Wire Line
 	2500 2100 2500 2150
 Connection ~ 2500 2150
 Wire Wire Line
-	4250 3450 5000 3450
+	4150 3450 5000 3450
 Text GLabel 3000 2550 0    50   Input ~ 0
 AF_MIC_BIAS_EN
 Wire Wire Line
@@ -679,7 +679,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 2150 3350 2150
 Wire Wire Line
-	2500 1750 4250 1750
+	2500 1750 4150 1750
 Wire Wire Line
 	3950 4450 5000 4450
 Wire Wire Line
@@ -829,7 +829,7 @@ L Device:C C143
 U 1 1 5DDC5BE8
 P 6000 1900
 F 0 "C143" H 6115 1946 50  0000 L CNN
-F 1 "1u" H 6115 1855 50  0000 L CNN
+F 1 "10u" H 6115 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 1750 50  0001 C CNN
 F 3 "~" H 6000 1900 50  0001 C CNN
 	1    6000 1900
@@ -935,7 +935,7 @@ L Device:C C142
 U 1 1 5DE3094B
 P 5150 1900
 F 0 "C142" H 5265 1946 50  0000 L CNN
-F 1 "1u" H 5265 1855 50  0000 L CNN
+F 1 "10u" H 5265 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5188 1750 50  0001 C CNN
 F 3 "~" H 5150 1900 50  0001 C CNN
 	1    5150 1900
@@ -1040,4 +1040,78 @@ Wire Wire Line
 Wire Wire Line
 	9000 2200 9000 1500
 Connection ~ 9000 1500
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J6
+U 1 1 5DDB1FA2
+P 4350 6550
+F 0 "J6" H 4400 6867 50  0000 C CNN
+F 1 "CLM-104-02-F-D" H 4400 6776 50  0000 C CNN
+F 2 "Connector_WUT:Header_Samtec_CLM-104-02-F-D_2x4_1mm_SM" H 4350 6550 50  0001 C CNN
+F 3 "~" H 4350 6550 50  0001 C CNN
+	1    4350 6550
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4650 2750 0    50   Input ~ 0
+AF_MCLK
+Text GLabel 4650 2850 0    50   Input ~ 0
+AF_BCLK
+Text GLabel 4650 2950 0    50   Input ~ 0
+AF_LRCLK
+Text GLabel 4650 3050 0    50   Input ~ 0
+AF_ADC_DAT
+Text GLabel 4650 3150 0    50   Input ~ 0
+AF_DAC_DAT
+Wire Wire Line
+	4650 3150 5000 3150
+Wire Wire Line
+	4650 3050 5000 3050
+Wire Wire Line
+	4650 2950 5000 2950
+Wire Wire Line
+	4650 2850 5000 2850
+Wire Wire Line
+	4650 2750 5000 2750
+Wire Wire Line
+	4550 6450 4900 6450
+Text GLabel 4900 6450 2    50   Input ~ 0
+AF_MCLK
+Wire Wire Line
+	4550 6550 4900 6550
+Text GLabel 4900 6550 2    50   Input ~ 0
+AF_SCL
+Wire Wire Line
+	4550 6650 4900 6650
+Text GLabel 4900 6650 2    50   Input ~ 0
+AF_SDA
+Wire Wire Line
+	4550 6750 4900 6750
+Text GLabel 4900 6750 2    50   Input ~ 0
+AF_LRCLK
+Wire Wire Line
+	4050 6650 3700 6650
+Text GLabel 3700 6650 0    50   Input ~ 0
+AF_BCLK
+Wire Wire Line
+	4050 6550 3700 6550
+Text GLabel 3700 6550 0    50   Input ~ 0
+AF_DAC_DAT
+Wire Wire Line
+	4050 6450 3700 6450
+Text GLabel 3700 6450 0    50   Input ~ 0
+AF_ADC_DAT
+$Comp
+L power:GND #PWR0271
+U 1 1 5DE4C168
+P 3950 6850
+F 0 "#PWR0271" H 3950 6600 50  0001 C CNN
+F 1 "GND" H 3955 6677 50  0000 C CNN
+F 2 "" H 3950 6850 50  0001 C CNN
+F 3 "" H 3950 6850 50  0001 C CNN
+	1    3950 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6750 3950 6750
+Wire Wire Line
+	3950 6750 3950 6850
 $EndSCHEMATC
