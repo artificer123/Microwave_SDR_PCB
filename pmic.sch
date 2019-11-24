@@ -38,17 +38,6 @@ F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/MachXO2
 $EndComp
 $Comp
 L IC_WUT:FPGA_Lattice_LCMXO2-640HC-4SG48C U14
-U 3 1 5DA74D83
-P 2100 5250
-F 0 "U14" H 2250 5900 50  0000 L CNN
-F 1 "LCMXO2-640HC-4SG48C" H 1650 4600 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm_ThermalVias" H 1800 5100 50  0001 C CNN
-F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/MachXO23/MachXO2FamilyDataSheet.pdf" H 1800 5100 50  0001 C CNN
-	3    2100 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L IC_WUT:FPGA_Lattice_LCMXO2-640HC-4SG48C U14
 U 4 1 5DA76FD4
 P 5050 5250
 F 0 "U14" H 5200 5900 50  0000 L CNN
@@ -578,11 +567,11 @@ $EndComp
 Wire Wire Line
 	5050 1550 5050 1300
 Text GLabel 6900 5200 0    50   Input ~ 0
-S1_PWR_ENABLE
+S1_PWR_ENABLE_LED
 Wire Wire Line
 	6900 5200 7050 5200
 Text GLabel 10250 5200 0    50   Input ~ 0
-S3_PWR_ENABLE
+S3_PWR_ENABLE_LED
 Wire Wire Line
 	10300 5200 10250 5200
 Wire Wire Line
@@ -636,7 +625,7 @@ NoConn ~ 8200 6050
 Wire Wire Line
 	8650 5200 8700 5200
 Text GLabel 8650 5200 0    50   Input ~ 0
-S2_PWR_ENABLE
+S2_PWR_ENABLE_LED
 NoConn ~ 9250 5750
 NoConn ~ 9250 6050
 Wire Wire Line
@@ -649,21 +638,21 @@ Wire Wire Line
 	7600 5100 6250 5100
 Text Label 6250 5100 0    50   ~ 0
 UART_Error
-Text GLabel 4300 2650 0    50   Input ~ 0
+Text GLabel 3500 4850 0    50   Input ~ 0
 12V_I_Good
-Text GLabel 4300 2750 0    50   Input ~ 0
+Text GLabel 3500 5050 0    50   Input ~ 0
 12V_V_Good
-Text GLabel 1450 5050 0    50   Input ~ 0
+Text GLabel 1450 5350 0    50   Input ~ 0
 5V_I_Good
-Text GLabel 1450 5150 0    50   Input ~ 0
-5V_V_Good
-Text GLabel 1350 4950 0    50   Input ~ 0
-3V3_V_Good
-Text GLabel 1350 4850 0    50   Input ~ 0
-3V3_I_Good
 Text GLabel 1450 5450 0    50   Input ~ 0
+5V_V_Good
+Text GLabel 1450 5150 0    50   Input ~ 0
+3V3_V_Good
+Text GLabel 1450 5250 0    50   Input ~ 0
+3V3_I_Good
+Text GLabel 1450 5750 0    50   Input ~ 0
 3V3ADC_I_Good
-Text GLabel 1450 5550 0    50   Input ~ 0
+Text GLabel 1450 5650 0    50   Input ~ 0
 3V3ADC_V_Good
 Text Label 3950 1850 0    50   ~ 0
 12V_IFault
@@ -692,11 +681,11 @@ Text Label 1000 1950 0    50   ~ 0
 Wire Wire Line
 	4550 2250 4300 2250
 Text GLabel 4300 2250 0    50   Output ~ 0
-S1_PWR_ENABLE
+S1_PWR_ENABLE_LED
 Text GLabel 4400 2050 0    50   Output ~ 0
-S2_PWR_ENABLE
+S2_PWR_ENABLE_LED
 Text GLabel 4400 1950 0    50   Output ~ 0
-S3_PWR_ENABLE
+S3_PWR_ENABLE_LED
 Wire Wire Line
 	1000 1850 1600 1850
 Wire Wire Line
@@ -919,7 +908,7 @@ F 3 "" H 3050 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3050 1800 3050 1750
-Text GLabel 1450 5650 0    50   Input ~ 0
+Text GLabel 4300 2650 0    50   Input ~ 0
 FPGA_PWR_GOOD
 $Comp
 L LED_WUT:LED_Cree_CLX6E-FKC LD9
@@ -945,7 +934,6 @@ F 3 "https://www.cree.com/led-components/media/documents/ds-CLX6E-FKC-1359.pdf" 
 $EndComp
 NoConn ~ 10850 6050
 NoConn ~ 10850 5750
-NoConn ~ 1600 5750
 $Comp
 L Device:R_Pack08 RN9
 U 1 1 5DD2991E
@@ -1187,4 +1175,27 @@ Text Label 3050 5650 0    50   ~ 0
 FPGA_Fault
 Text Label 3050 5550 0    50   ~ 0
 FPGA_OK
+Wire Wire Line
+	3500 5050 4550 5050
+Wire Wire Line
+	4550 4950 3500 4950
+Text GLabel 3500 4950 0    50   Output ~ 0
+S1_PWR_ENABLE
+Wire Wire Line
+	3500 4850 4550 4850
+$Comp
+L IC_WUT:FPGA_Lattice_LCMXO2-640HC-4SG48C U14
+U 3 1 5DA74D83
+P 2100 5250
+F 0 "U14" H 2250 5900 50  0000 L CNN
+F 1 "LCMXO2-640HC-4SG48C" H 1650 4600 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm_ThermalVias" H 1800 5100 50  0001 C CNN
+F 3 "http://www.latticesemi.com/~/media/LatticeSemi/Documents/DataSheets/MachXO23/MachXO2FamilyDataSheet.pdf" H 1800 5100 50  0001 C CNN
+	3    2100 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5750 1450 5750
+Text GLabel 1450 5550 0    50   Output ~ 0
+S3_PWR_ENABLE
 $EndSCHEMATC

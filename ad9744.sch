@@ -674,9 +674,9 @@ RF_DAC_CLK_N
 Text GLabel 3300 2400 0    50   Input ~ 0
 RF_DAC_CLK_P
 Wire Wire Line
-	5050 4300 4700 4300
-Text Label 4700 4300 0    50   ~ 0
-RF_AVDD
+	5050 4300 4650 4300
+Text Label 4650 4300 0    50   ~ 0
+DAC_AVDD
 $Comp
 L Device:R R147
 U 1 1 5DE82188
@@ -782,17 +782,10 @@ Wire Wire Line
 	6650 2350 7050 2350
 Wire Wire Line
 	7450 2000 7450 1900
-Connection ~ 7450 1900
 Wire Wire Line
 	7050 2000 7050 1900
-Connection ~ 7050 1900
-Wire Wire Line
-	7050 1900 7450 1900
 Wire Wire Line
 	6650 1900 6650 2000
-Connection ~ 6650 1900
-Wire Wire Line
-	6650 1900 7050 1900
 $Comp
 L Device:Ferrite_Bead_Small FB?
 U 1 1 5DF5EAAE
@@ -950,18 +943,10 @@ Connection ~ 7250 1000
 Wire Wire Line
 	7250 1000 7450 1000
 Wire Wire Line
-	7450 1900 7850 1900
-Wire Wire Line
-	8050 1900 8700 1900
-Wire Wire Line
 	7850 2300 7850 2350
 Wire Wire Line
 	7850 2350 7450 2350
 Connection ~ 7450 2350
-Wire Wire Line
-	7850 1900 8050 1900
-Connection ~ 7850 1900
-Connection ~ 8050 1900
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5DF5EB14
@@ -976,18 +961,38 @@ F 3 "" H 8200 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 1900 5650 2500
+	5550 1000 5550 2500
 Wire Wire Line
-	5650 1900 5750 1900
+	5550 1000 7050 1000
+Text Label 8250 1900 0    50   ~ 0
+DAC_AVDD
+Wire Wire Line
+	8050 1900 8700 1900
+Wire Wire Line
+	8050 1900 7850 1900
+Connection ~ 8050 1900
+Wire Wire Line
+	7450 1900 7850 1900
+Connection ~ 7850 1900
+Wire Wire Line
+	7450 1900 7050 1900
+Connection ~ 7450 1900
+Wire Wire Line
+	7050 1900 6650 1900
+Connection ~ 7050 1900
+Wire Wire Line
+	6650 1900 5850 1900
+Wire Wire Line
+	5650 1900 5650 2500
+Connection ~ 6650 1900
 Wire Wire Line
 	5750 2500 5750 1900
 Connection ~ 5750 1900
 Wire Wire Line
-	5750 1900 6650 1900
+	5750 1900 5650 1900
 Wire Wire Line
-	5550 1000 5550 2500
-Text Label 6100 1900 0    50   ~ 0
-RF_AVDD
+	5850 2500 5850 1900
+Connection ~ 5850 1900
 Wire Wire Line
-	5550 1000 7050 1000
+	5850 1900 5750 1900
 $EndSCHEMATC

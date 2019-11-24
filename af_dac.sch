@@ -150,7 +150,7 @@ $Comp
 L IC_WUT:ADAU1361 U29
 U 1 1 5DD791FC
 P 5600 3750
-F 0 "U29" H 5850 4900 50  0000 C CNN
+F 0 "U29" H 6000 4900 50  0000 C CNN
 F 1 "ADAU1361" H 5950 2350 50  0000 C CNN
 F 2 "IC_WUT:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm" H 5550 3950 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1361.pdf" H 5550 3950 50  0001 C CNN
@@ -849,8 +849,6 @@ $EndComp
 Wire Wire Line
 	6000 2050 6000 2100
 Wire Wire Line
-	5700 1700 6000 1700
-Wire Wire Line
 	6000 1700 6000 1750
 $Comp
 L Device:C C144
@@ -878,9 +876,6 @@ Wire Wire Line
 	6950 1700 6950 1750
 Wire Wire Line
 	6450 1750 6450 1700
-Connection ~ 6450 1700
-Wire Wire Line
-	6450 1700 6950 1700
 $Comp
 L power:GND #PWR0243
 U 1 1 5DDEAAFA
@@ -892,8 +887,6 @@ F 3 "" H 6700 2150 50  0001 C CNN
 	1    6700 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 1700 5700 2550
 Wire Wire Line
 	6450 2050 6450 2100
 Wire Wire Line
@@ -916,9 +909,6 @@ F 3 "~" H 5700 1450 50  0001 C CNN
 	1    5700 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 1550 5700 1700
-Connection ~ 5700 1700
 $Comp
 L power:+3.3V #PWR0244
 U 1 1 5DE29417
@@ -975,12 +965,7 @@ $EndComp
 Wire Wire Line
 	5700 1050 5700 1350
 Wire Wire Line
-	6000 1700 6450 1700
-Connection ~ 6000 1700
-Wire Wire Line
 	5150 1650 5500 1650
-Text Label 6650 1700 0    50   ~ 0
-AF_AVDD
 $Comp
 L Device:C C158
 U 1 1 5DFC835C
@@ -1114,4 +1099,58 @@ Wire Wire Line
 	4050 6750 3950 6750
 Wire Wire Line
 	3950 6750 3950 6850
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5DDC2297
+P 6950 1700
+F 0 "#FLG0105" H 6950 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6950 1873 50  0001 C CNN
+F 2 "" H 6950 1700 50  0001 C CNN
+F 3 "~" H 6950 1700 50  0001 C CNN
+	1    6950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1700 6000 1700
+Wire Wire Line
+	6000 1700 6450 1700
+Connection ~ 6000 1700
+Wire Wire Line
+	6450 1700 6950 1700
+Connection ~ 6450 1700
+Connection ~ 6950 1700
+Wire Wire Line
+	5700 1550 5700 1700
+Connection ~ 5700 1700
+Wire Wire Line
+	5700 1700 5700 2400
+Wire Wire Line
+	5800 2550 5800 2400
+Wire Wire Line
+	5800 2400 5700 2400
+Connection ~ 5700 2400
+Wire Wire Line
+	5700 2400 5700 2550
+$Comp
+L Misc_WUT:Symbol M2
+U 1 1 5DF6475C
+P 10450 2950
+F 0 "M2" H 10475 2996 50  0000 L CNN
+F 1 "Symbol" H 10475 2905 50  0000 L CNN
+F 2 "Misc_WUT:Icon_Speaker_6.5x6.5mm" H 10450 2950 50  0001 C CNN
+F 3 "" H 10450 2950 50  0001 C CNN
+	1    10450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Misc_WUT:Symbol M3
+U 1 1 5DF64D7D
+P 10450 4150
+F 0 "M3" H 10475 4196 50  0000 L CNN
+F 1 "Symbol" H 10475 4105 50  0000 L CNN
+F 2 "Misc_WUT:Icon_Headphone_6.5x6.5mm" H 10450 4150 50  0001 C CNN
+F 3 "" H 10450 4150 50  0001 C CNN
+	1    10450 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
