@@ -154,10 +154,10 @@ Connection ~ 5750 6650
 Wire Wire Line
 	5750 6650 5750 6450
 $Comp
-L Mechanical:MountingHole_Pad H9
+L Mechanical:MountingHole_Pad H7
 U 1 1 5DD333DF
 P 5950 7050
-F 0 "H9" V 5904 7200 50  0000 L CNN
+F 0 "H7" V 5904 7200 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5995 7200 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5950 7050 50  0001 C CNN
 F 3 "~" H 5950 7050 50  0001 C CNN
