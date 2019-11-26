@@ -290,4 +290,15 @@ Wire Wire Line
 Connection ~ 1800 2050
 Wire Wire Line
 	1800 2050 2600 2050
+$Comp
+L Misc_WUT:Barrel_Polarity M4
+U 1 1 5DEED12D
+P 1100 2250
+F 0 "M4" H 1125 2296 50  0000 L CNN
+F 1 "Barrel_Polarity" H 1125 2205 50  0000 L CNN
+F 2 "Misc_WUT:Barrel_Polarity" H 1100 2250 50  0001 C CNN
+F 3 "" H 1100 2250 50  0001 C CNN
+	1    1100 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
