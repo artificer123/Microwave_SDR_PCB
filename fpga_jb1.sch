@@ -644,17 +644,15 @@ F 3 "~" H 5400 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5200 6550 5050 6550
+	5200 6550 5150 6550
 Wire Wire Line
-	5050 6550 5050 6650
+	5150 6550 5150 6650
 Wire Wire Line
-	5050 6650 4850 6650
+	5150 6650 4850 6650
 Wire Wire Line
-	5200 6450 4950 6450
+	5200 6450 5050 6450
 Wire Wire Line
-	4950 6450 4950 6550
-Wire Wire Line
-	4950 6550 4850 6550
+	5050 6450 5050 6550
 Wire Wire Line
 	4850 6350 5200 6350
 Wire Wire Line
@@ -747,17 +745,17 @@ F 3 "~" H 5400 5250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5200 5550 5050 5550
+	5200 5550 5150 5550
 Wire Wire Line
-	5050 5550 5050 5650
+	5150 5550 5150 5650
 Wire Wire Line
-	5050 5650 4850 5650
+	5150 5650 4850 5650
 Wire Wire Line
-	5200 5450 4950 5450
+	5200 5450 5050 5450
 Wire Wire Line
-	4950 5450 4950 5550
+	5050 5450 5050 5550
 Wire Wire Line
-	4950 5550 4850 5550
+	5050 5550 4850 5550
 Wire Wire Line
 	4850 5350 5200 5350
 Wire Wire Line
@@ -952,4 +950,98 @@ LED_LAT
 Wire Wire Line
 	5650 4050 5900 4050
 NoConn ~ 3350 6250
+Text Notes 4850 7250 0    50   ~ 0
+H19
+Text Notes 4850 7150 0    50   ~ 0
+H20
+Text Notes 3350 6450 2    50   ~ 0
+G19
+Text Notes 3350 6350 2    50   ~ 0
+F19
+Text Notes 3350 6150 2    50   ~ 0
+D18
+Text Notes 3350 6050 2    50   ~ 0
+C19
+Text Notes 3350 5850 2    50   ~ 0
+G15
+Text Notes 3350 5750 2    50   ~ 0
+G16
+Text Notes 3350 5650 2    50   ~ 0
+D20
+Text Notes 3350 5550 2    50   ~ 0
+C20
+Text Notes 3350 5350 2    50   ~ 0
+B19
+Text Notes 3350 5250 2    50   ~ 0
+B20
+Text Notes 3350 5150 2    50   ~ 0
+E21
+Text Notes 3350 5050 2    50   ~ 0
+D21
+Text Notes 3350 4850 2    50   ~ 0
+G20
+Text Notes 3350 4750 2    50   ~ 0
+G21
+Text Notes 3350 4650 2    50   ~ 0
+A21
+Text Notes 3350 4550 2    50   ~ 0
+A22
+Text Notes 3350 4450 2    50   ~ 0
+B21
+Text Notes 3350 4350 2    50   ~ 0
+B22
+Text Notes 3350 4150 2    50   ~ 0
+H22
+Text Notes 3350 4050 2    50   ~ 0
+G22
+Text Notes 3350 3950 2    50   ~ 0
+D22
+Text Notes 3350 3850 2    50   ~ 0
+C22
+Text Notes 4850 6650 0    50   ~ 0
+G17
+Text Notes 4850 6550 0    50   ~ 0
+F17
+Wire Wire Line
+	4850 6550 5050 6550
+Text Notes 4850 6350 0    50   ~ 0
+E15
+Text Notes 4850 6250 0    50   ~ 0
+D15
+Text Notes 4850 6150 0    50   ~ 0
+F18
+Text Notes 4850 6050 0    50   ~ 0
+E18
+Text Notes 4850 5850 0    50   ~ 0
+F21
+Text Notes 4850 5750 0    50   ~ 0
+F22
+Text Notes 4850 5650 0    50   ~ 0
+C17
+Text Notes 4850 5550 0    50   ~ 0
+C18
+Text Notes 4850 5350 0    50   ~ 0
+E19
+Text Notes 4850 5250 0    50   ~ 0
+E20
+Text Notes 4850 5150 0    50   ~ 0
+B16
+Text Notes 4850 5050 0    50   ~ 0
+B17
+Text Notes 4850 4850 0    50   ~ 0
+D16
+Text Notes 4850 4750 0    50   ~ 0
+D17
+Text Notes 4850 4350 0    50   ~ 0
+A16
+Text Notes 4850 4250 0    50   ~ 0
+A17
+Text Notes 4850 4150 0    50   ~ 0
+A18
+Text Notes 4850 4050 0    50   ~ 0
+A19
+Text Notes 4850 7050 0    50   ~ 0
+F16
+Text Notes 4850 6950 0    50   ~ 0
+E16
 $EndSCHEMATC

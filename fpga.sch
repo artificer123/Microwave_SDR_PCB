@@ -27,7 +27,7 @@ F0 "JB2" 50
 F1 "fpga_jb2.sch" 50
 $EndSheet
 $Sheet
-S 8000 2350 2350 2050
+S 7950 2350 2350 2050
 U 5D96B18C
 F0 "JB3" 50
 F1 "fpga_jb3.sch" 50
