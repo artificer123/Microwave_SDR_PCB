@@ -506,4 +506,114 @@ Wire Wire Line
 	3350 7450 2850 7450
 Text GLabel 2850 7450 0    50   Output ~ 0
 RF_DAC_MODE
+Text Notes 4850 7750 0    50   ~ 0
+U6
+Text Notes 4850 7850 0    50   ~ 0
+U5
+Text Notes 4850 7650 0    50   ~ 0
+T6
+Text Notes 4850 7550 0    50   ~ 0
+R6
+Text Notes 4850 7350 0    50   ~ 0
+W5
+Text Notes 4850 7250 0    50   ~ 0
+W6
+Text Notes 4850 7150 0    50   ~ 0
+W7
+Text Notes 4850 7050 0    50   ~ 0
+V7
+Text Notes 4850 6850 0    50   ~ 0
+W8
+Text Notes 4850 6750 0    50   ~ 0
+V8
+Text Notes 4850 6650 0    50   ~ 0
+Y10
+Text Notes 4850 6550 0    50   ~ 0
+Y11
+Text Notes 4850 6350 0    50   ~ 0
+W10
+Text Notes 4850 6250 0    50   ~ 0
+W11
+Text Notes 4850 6150 0    50   ~ 0
+W12
+Text Notes 4850 6050 0    50   ~ 0
+V12
+Text Notes 4850 5850 0    50   ~ 0
+Y5
+Text Notes 4850 5750 0    50   ~ 0
+Y6
+Text Notes 4850 5650 0    50   ~ 0
+AA6
+Text Notes 4850 5550 0    50   ~ 0
+AA7
+Text Notes 4850 5350 0    50   ~ 0
+Y8
+Text Notes 4850 4750 0    50   ~ 0
+U10
+Text Notes 4850 4650 0    50   ~ 0
+U11
+Text Notes 4850 4550 0    50   ~ 0
+U12
+Text Notes 3350 7450 2    50   ~ 0
+U7
+Text Notes 3350 7350 2    50   ~ 0
+V4
+Text Notes 3350 7250 2    50   ~ 0
+V5
+Text Notes 3350 7150 2    50   ~ 0
+AB1
+Text Notes 3350 7050 2    50   ~ 0
+AB2
+Text Notes 3350 6850 2    50   ~ 0
+AA4
+Text Notes 3350 6750 2    50   ~ 0
+Y4
+Text Notes 3350 6650 2    50   ~ 0
+AB4
+Text Notes 3350 6550 2    50   ~ 0
+AB5
+Text Notes 3350 6350 2    50   ~ 0
+AB6
+Text Notes 3350 6250 2    50   ~ 0
+AB7
+Text Notes 3350 6150 2    50   ~ 0
+U4
+Text Notes 3350 6050 2    50   ~ 0
+T4
+Text Notes 3350 5850 2    50   ~ 0
+AB9
+Text Notes 3350 5750 2    50   ~ 0
+AB10
+Text Notes 3350 5650 2    50   ~ 0
+AA8
+Text Notes 3350 5550 2    50   ~ 0
+AA9
+Text Notes 4850 4350 0    50   ~ 0
+Y16
+Text Notes 4850 4250 0    50   ~ 0
+W16
+Text Notes 4850 4150 0    50   ~ 0
+W18
+Text Notes 4850 4050 0    50   ~ 0
+W17
+Text Notes 4850 3750 0    50   ~ 0
+W21
+Text Notes 4850 3650 0    50   ~ 0
+W20
+Text Notes 3350 4350 2    50   ~ 0
+AA18
+Text Notes 3350 4250 2    50   ~ 0
+Y18
+Text Notes 3350 4150 2    50   ~ 0
+AA19
+Text Notes 3350 4050 2    50   ~ 0
+Y19
+Text Notes 3350 3850 2    50   ~ 0
+AB21
+Text Notes 3350 3750 2    50   ~ 0
+AA21
+Text Notes 3350 3650 2    50   ~ 0
+AB22
+Text Notes 3350 3550 2    50   ~ 0
+AA22
 $EndSCHEMATC

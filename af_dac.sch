@@ -1040,7 +1040,7 @@ Text GLabel 4650 2850 0    50   Input ~ 0
 AF_BCLK
 Text GLabel 4650 2950 0    50   Input ~ 0
 AF_LRCLK
-Text GLabel 4650 3050 0    50   Input ~ 0
+Text GLabel 4650 3050 0    50   Output ~ 0
 AF_ADC_DAT
 Text GLabel 4650 3150 0    50   Input ~ 0
 AF_DAC_DAT

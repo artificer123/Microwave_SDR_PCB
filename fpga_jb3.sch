@@ -211,4 +211,20 @@ Wire Wire Line
 	7000 2750 6500 2750
 NoConn ~ 5000 5150
 NoConn ~ 5000 5250
+Text Notes 6500 5250 0    50   ~ 0
+N20
+Text Notes 6500 5150 0    50   ~ 0
+N19
+Text Notes 6500 4950 0    50   ~ 0
+T18
+Text Notes 6500 4850 0    50   ~ 0
+R18
+Text Notes 6500 4750 0    50   ~ 0
+R21
+Text Notes 6500 4650 0    50   ~ 0
+R20
+Text Notes 6500 4450 0    50   ~ 0
+M22
+Text Notes 6500 4350 0    50   ~ 0
+M21
 $EndSCHEMATC
